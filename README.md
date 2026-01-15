@@ -20,11 +20,7 @@ Simulador de examen para la certificación **Certified in Cybersecurity (CC)** d
 - ✅ **Modo oscuro/claro**
 - ✅ **Responsive** - funciona en móvil y desktop
 
-## 🚀 Demo
-
-[Ver Demo en Vivo](https://branyel26.github.io/cc-simulador)
-
-## 📦 Instalación Local
+##  Instalación Local
 
 ### Opción 1: Archivos estáticos
 ```bash
@@ -93,14 +89,7 @@ Este simulador es **material educativo** creado para práctica personal. Las pre
 
 Para información oficial, visita: [ISC2 CC Certification](https://www.isc2.org/Certifications/CC)
 
-## 👤 Autor
-
-**Branyel Pérez**
-
-- GitHub: [@branyel26](https://github.com/branyel26)
-- LinkedIn: [branyel](https://linkedin.com/in/branyel)
-
-## 📄 Licencia
+##  Licencia
 
 Este proyecto es de uso educativo. Creado con ❤️ para la comunidad de ciberseguridad.
 
