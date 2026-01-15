@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  cc-simulador:
+    build: .
+    container_name: cc-simulador
+    ports:
+      - "8080:80"
+    restart: unless-stopped
