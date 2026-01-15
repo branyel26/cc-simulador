@@ -35,8 +35,8 @@ cd cc-simulador
 
 ### Opción 2: Docker
 ```bash
-docker pull branyel26/cc-simulador
-docker run -d -p 8080:80 branyel26/cc-simulador
+docker pull estifenso/cc-simulador
+docker run -d -p 8080:80 estifenso/cc-simulador
 # Abrir http://localhost:8080
 ```
 
@@ -70,12 +70,12 @@ cc-simulador/
 
 ### Construir imagen
 ```bash
-docker build -t branyel26/cc-simulador .
+docker build -t estifenso/cc-simulador .
 ```
 
 ### Ejecutar contenedor
 ```bash
-docker run -d -p 8080:80 --name cc-simulador branyel26/cc-simulador
+docker run -d -p 8080:80 --name cc-simulador estifenso/cc-simulador
 ```
 
 ## 📚 Sobre la Certificación CC
