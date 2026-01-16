@@ -40,7 +40,7 @@ const QUESTIONS = [
     question: "¿En qué fase de configuration management es crucial validar que el baseline actual coincide con el baseline preliminar más todos los cambios aprobados secuencialmente?",
     options: ["Identificación y control", "Gestión de cambios de configuración", "Contabilidad de estado", "Verificación y auditoría"],
     correctIndex: 3,
-    explanation: "Verification and audit se enfoca en comprobar que el estado real del sistema coincide con lo documentado/esperado: baseline inicial + cambios aprobados. Change management controla cambios; status accounting reporta estados; identification/control define ítems y controles." 
+    explanation: "Verification and audit se enfoca en comprobar que el estado real del sistema coincide con lo documentado/esperado: baseline inicial + cambios aprobados. La gestión de cambios controla cambios; status accounting reporta estados; identification/control define ítems y controles." 
   },
   {
     id: 6,
@@ -72,7 +72,7 @@ const QUESTIONS = [
     question: "¿Cuál es el enfoque más efectivo para hacer cambios en sistemas minimizando impactos negativos?",
     options: ["Implementación rápida sin evaluación", "Procesos sistemáticos de gestión de cambios", "Ajustes ad hoc sin documentación", "Modificación aleatoria y monitoreo"],
     correctIndex: 1,
-    explanation: "Un proceso formal de change management planifica, evalúa, documenta y comunica cambios, reduciendo riesgo y efectos colaterales. Cambios ad hoc o rápidos sin evaluación suelen introducir fallas." 
+    explanation: "Un proceso formal de gestión de cambios planifica, evalúa, documenta y comunica cambios, reduciendo riesgo y efectos colaterales. Cambios ad hoc o rápidos sin evaluación suelen introducir fallas." 
   },
   {
     id: 10,
@@ -102,7 +102,7 @@ const QUESTIONS = [
     id: 13,
     domain: "D4",
     question: "¿En qué mecanismo puede apoyarse una organización para gestionar y regular conectividad y accesibilidad de dispositivos a la red?",
-    options: ["VPN", "Cortafuegos", "NAC (Network Control de Acceso)", "IDS/IPS"],
+    options: ["VPN", "Firewall", "NAC (Control de Acceso a la Red)", "IDS/IPS"],
     correctIndex: 2,
     explanation: "NAC controla qué dispositivos pueden conectarse y bajo qué políticas (cumplimiento, autenticación, postura). Firewall filtra tráfico; VPN cifra túneles; IDS/IPS detecta/previene intrusiones." 
   },
@@ -182,7 +182,7 @@ const QUESTIONS = [
     id: 23,
     domain: "D3",
     question: "¿Cuál es el principio principal de Role-Based Control de Acceso (RBAC)?",
-    options: ["Asignar permisos por jerarquía individual", "Usar MFA para regular acceso", "Aplicar reglas del cortafuegos", "Configurar roles para determinar permisos"],
+    options: ["Asignar permisos por jerarquía individual", "Usar MFA para regular acceso", "Aplicar reglas del Firewall", "Configurar roles para determinar permisos"],
     correctIndex: 3,
     explanation: "RBAC asigna permisos a roles (funciones) y los usuarios heredan permisos según su rol. No es un mecanismo de MFA ni de Firewall." 
   },
@@ -237,7 +237,7 @@ const QUESTIONS = [
   {
     id: 30,
     domain: "D4",
-    question: "¿Qué cloud model despliega recursos consumibles por cualquier persona según necesidad?",
+    question: "¿Qué modelo de nube despliega recursos consumibles por cualquier persona según necesidad?",
     options: ["Nube privada", "Nube pública", "Nube híbrida", "Nube comunitaria"],
     correctIndex: 1,
     explanation: "Public Cloud ofrece recursos al público general (clientes múltiples) vía internet." 
@@ -253,8 +253,8 @@ const QUESTIONS = [
   {
     id: 32,
     domain: "D5",
-    question: "¿Cuál es la secuencia correcta de etapas del data lifecycle?",
-    options: ["Storage, Usage, Archival, Creation, Destruction, Sharing", "Sharing, Archival, Destruction, Usage, Storage, Creation", "Usage, Creation, Destruction, Archival, Sharing, Storage", "Creation, Storage, Usage, Sharing, Archival, Destruction"],
+    question: "¿Cuál es la secuencia correcta de etapas del ciclo de vida de datos?",
+    options: ["Almacenamiento, Uso, Archivado, Creación, Destrucción, Compartir", "Compartir, Archivado, Destrucción, Uso, Almacenamiento, Creación", "Uso, Creación, Destrucción, Archivado, Compartir, Almacenamiento", "Creación, Almacenamiento, Uso, Compartir, Archivado, Destrucción"],
     correctIndex: 3,
     explanation: "El ciclo típico inicia con creación, luego almacenamiento, uso, compartición, archivado y finalmente destrucción." 
   },
@@ -293,7 +293,7 @@ const QUESTIONS = [
   {
     id: 37,
     domain: "D2",
-    question: "Tras confirmar un security incident en curso, ¿qué debe hacer un security administrator como paso inmediato?",
+    question: "Tras confirmar un incidente de seguridad en curso, ¿qué debe hacer un administrador de seguridad como paso inmediato?",
     options: ["Informar a todos los empleados", "Activar el plan de respuesta a incidentes", "Aislar sistemas afectados", "Investigar la fuente"],
     correctIndex: 1,
     explanation: "Al confirmar el incidente, lo primero es activar el plan para coordinar roles/acciones; contención e investigación se ejecutan dentro de ese plan." 
@@ -358,7 +358,7 @@ const QUESTIONS = [
     id: 45,
     domain: "D5",
     question: "¿Cuál es la técnica más efectiva para proteger datos en reposo (stored) cuando no están en uso ni en tránsito?",
-    options: ["Ofuscación de datos", "Cortafuegos", "Control de acceso", "Cifrado"],
+    options: ["Ofuscación de datos", "Firewall", "Control de acceso", "Cifrado"],
     correctIndex: 3,
     explanation: "Encryption protege datos at rest haciendo el contenido ilegible sin la clave. Firewalls/control de acceso ayudan, pero no sustituyen cifrado del dato." 
   },
@@ -389,10 +389,10 @@ const QUESTIONS = [
   {
     id: 49,
     domain: "D1",
-    question: "En access control, ¿qué función asegura que una persona sea responsable de sus acciones en el sistema?",
+    question: "En control de acceso, ¿qué función asegura que una persona sea responsable de sus acciones en el sistema?",
     options: ["Autenticación", "Autorización", "Responsabilidad", "Integridad"],
     correctIndex: 2,
-    explanation: "Accountability implica trazabilidad (logs/auditoría) para atribuir acciones a un usuario." 
+    explanation: "La responsabilidad (accountability) implica trazabilidad (logs/auditoría) para atribuir acciones a un usuario." 
   },
   {
     id: 50,
@@ -422,7 +422,7 @@ const QUESTIONS = [
     id: 53,
     domain: "D4",
     question: "¿Qué medida de seguridad es un control preventivo contra intrusiones de red?",
-    options: ["Cortafuegos", "Cifrado de datos", "IDS", "IPS"],
+    options: ["Firewall", "Cifrado de datos", "IDS", "IPS"],
     correctIndex: 3,
     explanation: "IPS (Sistema de Prevención de Intrusiones) bloquea amenazas en tiempo real. IDS detecta/alerta; encryption protege datos; Firewall filtra, pero IPS es el control de prevención específico aquí." 
   },
@@ -432,7 +432,7 @@ const QUESTIONS = [
     question: "¿Qué tipo de control es capacitación en conciencia de seguridad?",
     options: ["Técnico", "Físico", "Administrativo", "Preventivo"],
     correctIndex: 2,
-    explanation: "Training es un Administrative control (políticas, procedimientos, capacitación). Puede ser preventivo, pero su clasificación principal es administrativa." 
+    explanation: "La capacitación es un control administrativo (políticas, procedimientos, capacitación). Puede ser preventivo, pero su clasificación principal es administrativa." 
   },
   {
     id: 55,
@@ -453,10 +453,10 @@ const QUESTIONS = [
   {
     id: 57,
     domain: "D1",
-    question: "¿Qué componente de access control autentica usuarios y almacena datos de forma segura?",
+    question: "¿Qué componente de control de acceso autentica usuarios y almacena datos de forma segura?",
     options: ["Escáner biométrico", "Sistema de gestión de contraseñas", "Tarjeta inteligente", "Autenticación de firewall"],
     correctIndex: 2,
-    explanation: "Tarjeta Inteligente almacena credenciales/keys en un chip y se usa como factor 'something you have' para autenticación." 
+    explanation: "Tarjeta Inteligente almacena credenciales/claves en un chip y se usa como factor 'algo que tienes' para autenticación." 
   },
   {
     id: 58,
@@ -525,10 +525,10 @@ const QUESTIONS = [
   {
     id: 66,
     domain: "D4",
-    question: "¿Qué modelo de cloud service es mejor para aliviar la responsabilidad de gestionar hardware de data center (servidores, red, storage)?",
+    question: "¿Qué modelo de servicio en la nube es mejor para aliviar la responsabilidad de gestionar hardware de centro de datos (servidores, red, almacenamiento)?",
     options: ["SaaS", "IaaS", "PaaS", "On-premises hosting"],
     correctIndex: 1,
-    explanation: "IaaS mueve la infraestructura física al proveedor (hardware/virtualización), mientras el cliente gestiona lo que corre encima." 
+    explanation: "IaaS mueve la infraestructura física al proveedor (hardware/virtualización/almacenamiento), mientras el cliente gestiona lo que corre encima." 
   },
   {
     id: 67,
@@ -536,7 +536,7 @@ const QUESTIONS = [
     question: "En una organización que quiere que toda administración de acceso sea ejecutada solo por IT, ¿qué modelo es más adecuado?",
     options: ["Centralizado", "Descentralizado", "Role-Based", "Obligatorio"],
     correctIndex: 0,
-    explanation: "Centralized access control significa que una sola entidad (IT) gestiona y administra accesos." 
+    explanation: "Control de acceso centralizado significa que una sola entidad (TI) gestiona y administra accesos." 
   },
   {
     id: 68,
@@ -550,7 +550,7 @@ const QUESTIONS = [
     id: 69,
     domain: "D4",
     question: "¿Qué opción representa una técnica de logical monitoring en cybersecurity?",
-    options: ["Configuración de cortafuegos", "Revisión de SIEM", "Escaneo de antivirus", "Segmentación de red"],
+    options: ["Configuración del Firewall", "Revisión de SIEM", "Escaneo de antivirus", "Segmentación de red"],
     correctIndex: 1,
     explanation: "SIEM review implica monitoreo/correlación centralizada de logs y eventos para detectar incidentes: es monitoreo lógico." 
   },
@@ -629,16 +629,16 @@ const QUESTIONS = [
   {
     id: 79,
     domain: "D1",
-    question: "¿Qué tipo de risk analysis evalúa impactos potenciales que una threat source podría causar a las operaciones?",
+    question: "¿Qué tipo de análisis de riesgos evalúa impactos potenciales que una fuente de amenaza podría causar a las operaciones?",
     options: ["Cuantitativo", "Cualitativo", "Probabilístico", "Reactivo"],
     correctIndex: 1,
-    explanation: "Qualitative risk analysis evalúa impacto/likelihood usando escalas descriptivas (alto/medio/bajo) y juicio experto, enfocándose en impactos operativos." 
+    explanation: "El análisis de riesgos cualitativo evalúa impacto/probabilidad usando escalas descriptivas (alto/medio/bajo) y juicio experto, enfocándose en impactos operativos." 
   },
   {
     id: 80,
     domain: "D5",
     question: "¿Cuál término describe mejor encryption?",
-    options: ["Conversión de ciphertext a plaintext", "Transformación de plaintext a ciphertext", "Autenticación de digital signatures", "Compresión para storage"],
+    options: ["Conversión de texto cifrado a texto plano", "Transformación de texto plano a texto cifrado", "Autenticación de firmas digitales", "Compresión para almacenamiento"],
     correctIndex: 1,
     explanation: "Encryption transforma plaintext en ciphertext para proteger confidencialidad. El proceso inverso es decryption." 
   },
@@ -669,15 +669,15 @@ const QUESTIONS = [
   {
     id: 84,
     domain: "D5",
-    question: "¿Cuál es el método más efectivo para asegurar que empleados internalicen security consciousness tras awareness training?",
+    question: "¿Cuál es el método más efectivo para asegurar que empleados internalicen la conciencia de seguridad tras la capacitación de concientización?",
     options: ["Seminarios regulares", "Folletos y carteles", "Pruebas rutinarias para medir comprensión/retención", "Premios por asistencia"],
     correctIndex: 2,
-    explanation: "La forma más efectiva de medir retención y aplicación es evaluar con pruebas/simulaciones (testing) y reforzar donde haya brechas." 
+    explanation: "La forma más efectiva de medir retención y aplicación es evaluar con pruebas/simulaciones y reforzar donde haya brechas." 
   },
   {
     id: 85,
     domain: "D3",
-    question: "En una organización con múltiples departamentos y funciones diversas, ¿qué access control es más adecuado para administrar privilegios eficientemente?",
+    question: "En una organización con múltiples departamentos y funciones diversas, ¿qué control de acceso es más adecuado para administrar privilegios eficientemente?",
     options: ["RBAC", "MAC", "DAC", "ABAC"],
     correctIndex: 0,
     explanation: "RBAC escala bien porque asigna permisos por roles (departamento/función) y simplifica administración." 
@@ -686,7 +686,7 @@ const QUESTIONS = [
     id: 86,
     domain: "D4",
     question: "¿Cuál es una ventaja principal de sistemas SIEM?",
-    options: ["Información de monitoreo y gestión centralizada de registros", "Cifrado de tráfico", "Actualizaciones de inteligencia de amenazas en tiempo real", "Aplicar reglas del cortafuegos"],
+    options: ["Información de monitoreo y gestión centralizada de registros", "Cifrado de tráfico", "Actualizaciones de inteligencia de amenazas en tiempo real", "Aplicar reglas del Firewall"],
     correctIndex: 0,
     explanation: "SIEM centraliza logs, correlaciona eventos y da visibilidad/alertas para detección e investigación." 
   },
@@ -709,7 +709,7 @@ const QUESTIONS = [
   {
     id: 89,
     domain: "D2",
-    question: "¿Cuál técnica es menos efectiva para detectar un security incident?",
+    question: "¿Cuál técnica es menos efectiva para detectar un incidente de seguridad?",
     options: ["Cifrado", "IDS", "SIEM", "Pruebas de Penetración"],
     correctIndex: 0,
     explanation: "Encryption es preventivo (confidencialidad), no un mecanismo de detección. IDS/SIEM detectan; penProbando identifica vulnerabilidades, aunque no es monitoreo continuo." 
@@ -757,7 +757,7 @@ const QUESTIONS = [
   {
     id: 95,
     domain: "D1",
-    question: "¿Cuál es una desventaja significativa del quantitative risk analysis?",
+    question: "¿Cuál es una desventaja significativa del análisis de riesgos cuantitativo?",
     options: ["No puede dar números", "Complejidades y requisitos de datos", "Alcance limitado", "Subjetividad"],
     correctIndex: 1,
     explanation: "El análisis cuantitativo requiere datos y modelos confiables, y puede ser complejo/costoso de ejecutar correctamente." 
@@ -774,7 +774,7 @@ const QUESTIONS = [
     id: 97,
     domain: "D4",
     question: "¿Qué solución puede usar un security administrator para bloquear tráfico malicioso desde una fuente externa desconocida?",
-    options: ["Cortafuegos", "IDS", "NAT", "VPN"],
+    options: ["Firewall", "IDS", "NAT", "VPN"],
     correctIndex: 0,
     explanation: "Firewall es el control típico para bloquear/filtrar tráfico según reglas. IDS alerta; NAT traduce direcciones; VPN cifra túneles." 
   },

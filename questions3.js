@@ -59,7 +59,7 @@ const QUESTIONS = [
 		options: ["Code optimization", "Diseño de interfaz de usuario", "Diseño de esquema de base de datos", "Revisión de código de seguridad"],
 		correctIndex: 3,
 		explanation:
-			"Un security code review ayuda a identificar vulnerabilidades en el código antes de que lleguen a producción, reforzando SDLC/SSDLC."
+			"Una revisión de código de seguridad ayuda a identificar vulnerabilidades en el código antes de que lleguen a producción, reforzando SDLC/SSDLC."
 	},
 	{
 		id: 7,
@@ -110,7 +110,7 @@ const QUESTIONS = [
 	{
 		id: 12,
 		domain: "D2",
-		question: "¿Cuál de las siguientes acciones se consideraría un security incident?",
+		question: "¿Cuál de las siguientes acciones se consideraría un incidente de seguridad?",
 		options: [
 			"Actualizaciones de software regulares",
 			"Mantenimiento de red programado",
@@ -119,7 +119,7 @@ const QUESTIONS = [
 		],
 		correctIndex: 2,
 		explanation:
-			"Un security incident compromete CIA (Confidentiality, Integrity, Availability). El acceso no autorizado a datos sensibles es un incidente."
+			"Un incidente de seguridad compromete CIA (Confidencialidad, Integridad, Disponibilidad). El acceso no autorizado a datos sensibles es un incidente."
 	},
 	{
 		id: 13,
@@ -148,7 +148,7 @@ const QUESTIONS = [
 		options: ["Asequibilidad", "Integridad", "Confidencialidad", "Disponibilidad"],
 		correctIndex: 0,
 		explanation:
-			"La CIA triad se compone de Confidentiality, Integrity y Availability. Affordability no es parte del triángulo clásico."
+			"La tríada CIA se compone de Confidencialidad, Integridad y Disponibilidad. Affordability no es parte del triángulo clásico."
 	},
 	{
 		id: 16,
@@ -183,11 +183,11 @@ const QUESTIONS = [
 		id: 19,
 		domain: "D3",
 		question:
-			"¿Qué control de cybersecurity está diseñado para autenticar usuarios y autorizar su acceso a recursos específicos?",
-		options: ["Configuración de cortafuegos", "Control de acceso", "Sistema de detección de intrusiones", "Algoritmo de cifrado"],
+			"¿Qué control de ciberseguridad está diseñado para autenticar usuarios y autorizar su acceso a recursos específicos?",
+		options: ["Configuración del Firewall", "Control de acceso", "Sistema de detección de intrusiones", "Algoritmo de cifrado"],
 		correctIndex: 1,
 		explanation:
-			"Access control abarca autenticación y autorización (quién eres y qué puedes hacer), aplicando mínimo privilegio."
+			"El control de acceso abarca autenticación y autorización (quién eres y qué puedes hacer), aplicando mínimo privilegio."
 	},
 	{
 		id: 20,
@@ -284,7 +284,7 @@ const QUESTIONS = [
 		domain: "D1",
 		question:
 			"¿Qué representa el aspecto principal de un requisito de compliance típicamente gestionado por entidades gubernamentales?",
-		options: ["Capacitación en conciencia de seguridad", "Desarrollo de políticas", "Evaluación de riesgos", "Regulación"],
+		options: ["Capacitación en conciencia de seguridad", "Desarrollo de políticas", "Evaluación de riesgos", "Regulaciones"],
 		correctIndex: 3,
 		explanation:
 			"Las regulaciones (regulations) son requisitos legales establecidos por gobiernos/autoridades regulatorias."
@@ -293,7 +293,7 @@ const QUESTIONS = [
 		id: 30,
 		domain: "D5",
 		question:
-			"¿Qué puede emplearse dentro del change management para facilitar un rollback en caso de problemas?",
+			"¿Qué puede emplearse dentro de la gestión de cambios para facilitar un rollback en caso de problemas?",
 		options: ["Version control", "Respaldo", "Probando environment", "Comité asesor de cambios"],
 		correctIndex: 1,
 		explanation:
@@ -351,7 +351,7 @@ const QUESTIONS = [
 		id: 36,
 		domain: "D4",
 		question: "¿Qué medida puede ayudar de forma efectiva a prevenir ataques potenciales en la red de una organización?",
-		options: ["Cortafuegos", "Software antivirus", "Gestión de parches", "NIPS"],
+		options: ["Firewall", "Software antivirus", "Gestión de parches", "NIPS"],
 		correctIndex: 3,
 		explanation:
 			"Un NIPS (Network Sistema de Prevención de Intrusiones) puede detectar y bloquear tráfico malicioso en línea, evitando explotación."
@@ -373,7 +373,7 @@ const QUESTIONS = [
 		options: ["Phishing attack", "Malware injection", "Inyección SQL", "Ataque DDoS"],
 		correctIndex: 3,
 		explanation:
-			"Un DDoS usa múltiples hosts comprometidos (botnet) para saturar recursos y afectar Availability."
+			"Un DDoS usa múltiples hosts comprometidos (botnet) para saturar recursos y afectar Disponibilidad."
 	},
 	{
 		id: 39,
@@ -477,20 +477,20 @@ const QUESTIONS = [
 		id: 49,
 		domain: "D2",
 		question:
-			"En disaster recovery planning, ¿qué opción suele ofrecer solo una sala con servicios básicos (electricidad/ventilación) y requiere gran setup?",
+			"En la planificación de recuperación ante desastres, ¿qué opción suele ofrecer solo una sala con servicios básicos (electricidad/ventilación) y requiere gran configuración?",
 		options: ["Sitio caliente", "Sitio tibio", "Sitio frío", "Sitio móvil"],
 		correctIndex: 2,
 		explanation:
-			"Un cold site tiene infraestructura mínima; la recuperación toma más tiempo porque hay que instalar sistemas y restaurar datos."
+			"Un sitio frío tiene infraestructura mínima; la recuperación toma más tiempo porque hay que instalar sistemas y restaurar datos."
 	},
 	{
 		id: 50,
 		domain: "D4",
-		question: "¿Qué define mejor el concepto de defense in depth?",
-		options: ["Protección multicapa", "Solo medidas reactivas", "Single-layered protection", "Limited access controls"],
+		question: "¿Qué define mejor el concepto de defensa en profundidad?",
+		options: ["Protección multicapa", "Solo medidas reactivas", "Protección de capa única", "Controles de acceso limitados"],
 		correctIndex: 0,
 		explanation:
-			"Defense in depth aplica múltiples capas de controles (preventive/detective/corrective) para que una falla no implique compromiso total."
+			"Defensa en profundidad aplica múltiples capas de controles (preventivo/detectivo/correctivo) para que una falla no implique compromiso total."
 	},
 
 	{
@@ -500,7 +500,7 @@ const QUESTIONS = [
 		options: ["Phishing", "Malware injection", "Inyección SQL", "DDoS"],
 		correctIndex: 3,
 		explanation:
-			"DDoS intenta agotar recursos (ancho de banda, CPU, sesiones) para afectar Availability y causar interrupción de servicio."
+			"DDoS intenta agotar recursos (ancho de banda, CPU, sesiones) para afectar Disponibilidad y causar interrupción de servicio."
 	},
 	{
 		id: 52,
@@ -544,7 +544,7 @@ const QUESTIONS = [
 		id: 56,
 		domain: "D2",
 		question:
-			"Cuando se recibe información sobre la posibilidad de un potential security incident, ¿cuál es el primer paso?",
+			"Cuando se recibe información sobre la posibilidad de un posible incidente de seguridad, ¿cuál es el primer paso?",
 		options: ["Implement immediate countermeasures", "Notify the entire organization", "Verify the information received", "Escalar el problema a la alta dirección"],
 		correctIndex: 2,
 		explanation:
@@ -633,11 +633,11 @@ const QUESTIONS = [
 	{
 		id: 65,
 		domain: "D3",
-		question: "¿Qué modelo de access control se basa principalmente en niveles de security clearance?",
+		question: "¿Qué modelo de control de acceso se basa principalmente en niveles de autorización de seguridad?",
 		options: ["RBAC", "MAC", "DAC", "ABAC"],
 		correctIndex: 1,
 		explanation:
-			"MAC usa labels/clearances y reglas centralizadas para controlar acceso a objetos según clasificación/sensibilidad."
+			"MAC usa etiquetas/autorizaciones y reglas centralizadas para controlar acceso a objetos según clasificación/sensibilidad."
 	},
 	{
 		id: 66,
@@ -661,11 +661,11 @@ const QUESTIONS = [
 		id: 68,
 		domain: "D2",
 		question:
-			"Dentro de una organización, ¿qué unidad es menos probable que participe activamente en el desarrollo de un disaster recovery plan?",
-		options: ["Human Resources", "Information Technology", "Operaciones", "Finanzas"],
+			"Dentro de una organización, ¿qué unidad es menos probable que participe activamente en el desarrollo de un plan de recuperación ante desastres?",
+		options: ["Recursos Humanos", "Tecnología de la Información", "Operaciones", "Finanzas"],
 		correctIndex: 3,
 		explanation:
-			"Finance suele apoyar presupuesto y evaluación de costos, pero el diseño operativo del DRP recae principalmente en IT y operaciones."
+			"Finanzas suele apoyar presupuesto y evaluación de costos, pero el diseño operativo del DRP recae principalmente en TI y operaciones."
 	},
 	{
 		id: 69,
@@ -803,11 +803,11 @@ const QUESTIONS = [
 		id: 82,
 		domain: "D3",
 		question:
-			"¿Qué describe un conjunto de reglas que especifica qué objetos puede acceder un sujeto (subject) en cybersecurity?",
-		options: ["Access control list (ACL)", "Security protocol", "Algoritmo de cifrado", "Proceso de autenticación"],
+			"¿Qué describe un conjunto de reglas que especifica qué objetos puede acceder un sujeto en ciberseguridad?",
+		options: ["Lista de control de acceso (ACL)", "Protocolo de seguridad", "Algoritmo de cifrado", "Proceso de autenticación"],
 		correctIndex: 0,
 		explanation:
-			"Un ACL define permisos allow/deny por sujeto/objeto o criterios equivalentes, aplicando control de acceso."
+			"Una ACL define permisos permitir/denegar por sujeto/objeto o criterios equivalentes, aplicando control de acceso."
 	},
 	{
 		id: 83,
@@ -871,7 +871,7 @@ const QUESTIONS = [
 		options: ["Gestión de riesgos", "Incident handling", "Gestión de Cambios", "Control de configuración"],
 		correctIndex: 2,
 		explanation:
-			"Gestión de Cambios evalúa, aprueba, planifica y documenta cambios para reducir riesgo, evitar downtime y mantener estabilidad/compliance."
+			"Gestión de Cambios evalúa, aprueba, planifica y documenta cambios para reducir riesgo, evitar tiempo de inactividad y mantener estabilidad/compliance."
 	},
 	{
 		id: 89,
@@ -910,7 +910,7 @@ const QUESTIONS = [
 		options: ["Obligatorio", "Basado en roles", "Discrecional", "Disuasivo"],
 		correctIndex: 3,
 		explanation:
-			"Un deterrent control busca disuadir (warning banners, cámaras visibles, sanciones) más que bloquear técnicamente el acceso."
+			"Un control disuasivo busca disuadir (banners de advertencia, cámaras visibles, sanciones) más que bloquear técnicamente el acceso."
 	},
 	{
 		id: 93,
@@ -992,6 +992,6 @@ const QUESTIONS = [
 		options: ["Cifrado de datos", "Escalabilidad", "Autenticación multifactor", "Virtualización"],
 		correctIndex: 1,
 		explanation:
-			"Scalability/elasticidad permite escalar recursos (compute/storage) hacia arriba o abajo según demanda de carga."
+			"Escalabilidad/elasticidad permite escalar recursos (cómputo/almacenamiento) hacia arriba o abajo según demanda de carga."
 	}
 ];

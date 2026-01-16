@@ -37,11 +37,11 @@ const QUESTIONS = [
   {
     id: 4,
     domain: "D4",
-    question: "¿Qué técnica de ciberataque representa una amenaza significativa para el principio de Availability?",
+    question: "¿Qué técnica de ciberataque representa una amenaza significativa para el principio de Disponibilidad?",
     options: ["Phishing", "Inyección SQL", "Hombre en el Medio (MitM)", "Denegación de Servicio (DoS)"],
     correctIndex: 3,
     explanation:
-      "DoS busca impedir el acceso legítimo a recursos al saturar servicios o red, impactando directamente Availability. Phishing suele afectar Confidentiality; SQLi afecta Integrity; MitM afecta Confidentiality/Integrity." 
+      "DoS busca impedir el acceso legítimo a recursos al saturar servicios o red, impactando directamente Disponibilidad. Phishing suele afectar Confidencialidad; SQLi afecta Integridad; MitM afecta Confidencialidad/Integridad." 
   },
   {
     id: 5,
@@ -92,7 +92,7 @@ const QUESTIONS = [
   {
     id: 9,
     domain: "D5",
-    question: "¿Qué proceso puede emplearse para asegurar mínimo downtime cuando se realizan modificaciones a sistemas?",
+    question: "¿Qué proceso puede emplearse para asegurar mínimo tiempo de inactividad cuando se realizan modificaciones a sistemas?",
     options: ["Evaluación de Riesgos", "Respuesta a incidentes", "Gestión de Cambios", "Escaneo de Vulnerabilidades"],
     correctIndex: 2,
     explanation:
@@ -128,7 +128,7 @@ const QUESTIONS = [
   {
     id: 13,
     domain: "D1",
-    question: "¿Cuál es la medida principal para estimar el efecto potencial de un risk event en una organización si se materializa?",
+    question: "¿Cuál es la medida principal para estimar el efecto potencial de un evento de riesgo en una organización si se materializa?",
     options: ["Probabilidad de la amenaza", "Severidad de la vulnerabilidad", "Probabilidad del riesgo", "Impacto"],
     correctIndex: 3,
     explanation:
@@ -137,7 +137,7 @@ const QUESTIONS = [
   {
     id: 14,
     domain: "D3",
-    question: "¿Qué access control model está asociado con el Bell-LaPadula security model?",
+    question: "¿Qué modelo de control de acceso está asociado con el modelo de seguridad Bell-LaPadula?",
     options: ["MAC", "DAC", "RBAC", "ABAC"],
     correctIndex: 0,
     explanation:
@@ -146,7 +146,7 @@ const QUESTIONS = [
   {
     id: 15,
     domain: "D3",
-    question: "¿Qué access control model otorga acceso a objetos a sujetos en base a roles preconfigurados?",
+    question: "¿Qué modelo de control de acceso otorga acceso a objetos a sujetos en base a roles preconfigurados?",
     options: ["DAC", "MAC", "RBAC", "ABAC"],
     correctIndex: 2,
     explanation:
@@ -173,7 +173,7 @@ const QUESTIONS = [
     options: ["Disponibilidad", "Confidencialidad", "Integridad", "No repudio"],
     correctIndex: 0,
     explanation:
-      "Las digital signatures aportan Integrity y Non-repudiation (y autenticidad del firmante). No garantizan Availability." 
+      "Las firmas digitales aportan Integridad y No repudio (y autenticidad del firmante). No garantizan Disponibilidad." 
   },
   {
     id: 18,
@@ -202,7 +202,7 @@ const QUESTIONS = [
     id: 20,
     domain: "D4",
     question: "¿Qué término se refiere a un individuo o entidad que busca explotar debilidades para comprometer un sistema?",
-    options: ["Ciberdelincuente", "System infiltrator", "Threat actor", "Security analyst"],
+    options: ["Ciberdelincuente", "Infiltrador de sistemas", "Actor de amenaza", "Analista de seguridad"],
     correctIndex: 2,
     explanation:
       "Threat actor es el término general para quien intenta explotar vulnerabilidades (por dinero, espionaje, disrupción, etc.)." 
@@ -210,7 +210,7 @@ const QUESTIONS = [
   {
     id: 21,
     domain: "D5",
-    question: "¿Qué acción se considera un paso efectivo para hardening de un sistema contra amenazas?",
+    question: "¿Qué acción se considera un paso efectivo para hardening (endurecimiento) de un sistema contra amenazas?",
     options: [
       "Deshabilitar backups",
       "Habilitar acceso de guest account",
@@ -219,7 +219,7 @@ const QUESTIONS = [
     ],
     correctIndex: 3,
     explanation:
-      "Endurecimiento busca reducir el attack surface. Cerrar puertos/servicios no necesarios elimina posibles puntos de entrada." 
+      "Hardening (endurecimiento) busca reducir la superficie de ataque. Cerrar puertos/servicios no necesarios elimina posibles puntos de entrada." 
   },
   {
     id: 22,
@@ -242,16 +242,16 @@ const QUESTIONS = [
   {
     id: 24,
     domain: "D4",
-    question: "¿Qué dispositivo de seguridad se usa comúnmente para regular y controlar el flujo de packets en una red?",
-    options: ["Enrutador", "Conmutador", "Cortafuegos", "Módem"],
+    question: "¿Qué dispositivo de seguridad se usa comúnmente para regular y controlar el flujo de paquetes en una red?",
+    options: ["Enrutador", "Conmutador", "Firewall", "Módem"],
     correctIndex: 2,
     explanation:
-      "Un Firewall inspecciona y permite/bloquea tráfico según reglas (IP, puertos, protocolos), controlando el flujo de packets." 
+      "Un Firewall inspecciona y permite/bloquea tráfico según reglas (IP, puertos, protocolos), controlando el flujo de paquetes." 
   },
   {
     id: 25,
     domain: "D2",
-    question: "¿Cuál es la consideración más importante de un disaster recovery plan integral?",
+    question: "¿Cuál es la consideración más importante de un plan de recuperación ante desastres integral?",
     options: [
       "Compensación financiera por pérdida de datos",
       "Restauración rápida de sistemas IT",
@@ -266,7 +266,7 @@ const QUESTIONS = [
     id: 26,
     domain: "D1",
     question: "¿Qué proceso se usa principalmente para verificar la identidad de un usuario al acceder a un sistema?",
-    options: ["Autorización", "Autenticación", "Cifrado", "Cortafuegos"],
+    options: ["Autorización", "Autenticación", "Cifrado", "Firewall"],
     correctIndex: 1,
     explanation:
       "Authentication confirma identidad (quién eres). Authorization decide permisos (qué puedes hacer) una vez autenticado." 
@@ -306,7 +306,7 @@ const QUESTIONS = [
   {
     id: 30,
     domain: "D1",
-    question: "¿Cuál es un ejemplo de administrative control en cybersecurity?",
+    question: "¿Cuál es un ejemplo de control administrativo en ciberseguridad?",
     options: ["Autenticación biométrica", "Algoritmos de cifrado", "Cámaras de seguridad", "Capacitación en conciencia de seguridad"],
     correctIndex: 3,
     explanation:
@@ -316,7 +316,7 @@ const QUESTIONS = [
     id: 31,
     domain: "D4",
     question: "¿Qué herramienta se usa comúnmente para interceptar y analizar tráfico de red con fines de troubleshooting y seguridad?",
-    options: ["Cortafuegos", "IDS", "VPN", "Protocol Analyzer"],
+    options: ["Firewall", "IDS", "VPN", "Protocol Analyzer"],
     correctIndex: 3,
     explanation:
       "Un protocol analyzer (p.ej., Wireshark) captura y analiza paquetes para diagnosticar problemas y entender tráfico/amenazas." 
@@ -340,10 +340,10 @@ const QUESTIONS = [
     domain: "D1",
     question: "¿Qué categorías abarcan los security controls que cubren distintos aspectos del entorno de una organización?",
     options: [
-      "Procedural, Tactical y Reactive",
-      "Reactive, Logical y Strategic",
-      "Preventative, Offensive y Forensic",
-      "Physical, Technical y Administrative"
+      "Procesal, Táctico y Reactivo",
+      "Reactivo, Lógico y Estratégico",
+      "Preventivo, Ofensivo y Forense",
+      "Físico, Técnico y Administrativo"
     ],
     correctIndex: 3,
     explanation:
@@ -362,7 +362,7 @@ const QUESTIONS = [
     id: 35,
     domain: "D4",
     question: "¿Qué amenaza de cybersecurity está diseñada específicamente para crear una entrada oculta (hidden entry point) para control remoto no autorizado?",
-    options: ["Spyware", "Ransomware", "Adware (Software publicitario)", "Puerta trasera"],
+    options: ["Spyware", "Ransomware", "Adware (Software publicitario)", "Backdoor (puerta trasera)"],
     correctIndex: 3,
     explanation:
       "Un backdoor permite acceso remoto no autorizado evitando controles normales de autenticación, sirviendo como puerta trasera para control." 
@@ -394,7 +394,7 @@ const QUESTIONS = [
     id: 38,
     domain: "D4",
     question: "¿Cuál es el objetivo principal de un ransomware attack?",
-    options: ["Cifrado de dispositivo", "Robo de datos", "System disruption", "Network infiltration"],
+    options: ["Cifrado de dispositivo", "Robo de datos", "Interrupción del sistema", "Infiltración de red"],
     correctIndex: 0,
     explanation:
       "Ransomware busca cifrar datos/dispositivo para negar acceso y exigir un pago por la clave o recuperación." 
@@ -416,7 +416,7 @@ const QUESTIONS = [
   {
     id: 40,
     domain: "D5",
-    question: "¿Cuál es un principio fundamental para mejorar la security posture de los sistemas de información de una organización?",
+    question: "¿Cuál es un principio fundamental para mejorar la postura de seguridad de los sistemas de información de una organización?",
     options: ["Pruebas de penetración", "Regular capacitación en conciencia de seguridad", "Detección de intrusiones", "Protocolos de cifrado"],
     correctIndex: 1,
     explanation:
@@ -443,7 +443,7 @@ const QUESTIONS = [
   {
     id: 43,
     domain: "D5",
-    question: "¿Qué elemento es clave para asegurar la integridad de system configurations?",
+    question: "¿Qué elemento es clave para asegurar la integridad de las configuraciones del sistema?",
     options: [
       "Auditorías de seguridad regulares",
       "Implementar security patches y updates regularmente",
@@ -476,10 +476,10 @@ const QUESTIONS = [
     id: 46,
     domain: "D4",
     question: "¿Cuál NO suele ser una responsabilidad de un SOC (Operaciones de Seguridad Center)?",
-    options: ["Monitoring network traffic", "Investigating security incidents", "Gestionando nómina de empleados", "Analizando registros de seguridad"],
+    options: ["Monitoreo de tráfico de red", "Investigando incidentes de seguridad", "Gestionando nómina de empleados", "Analizando registros de seguridad"],
     correctIndex: 2,
     explanation:
-      "Un SOC se enfoca en monitoreo, análisis y respuesta ante incidentes. Nómina (payroll) corresponde a áreas como HR/finanzas." 
+      "Un SOC se enfoca en monitoreo, análisis y respuesta ante incidentes de seguridad. Nómina (payroll) corresponde a áreas como HR/finanzas." 
   },
   {
     id: 47,
@@ -524,7 +524,7 @@ const QUESTIONS = [
     options: ["Integridad", "Confidencialidad", "Autenticación", "Disponibilidad"],
     correctIndex: 1,
     explanation:
-      "Confidentiality evita divulgación no autorizada (p.ej., PII), mediante controles de acceso, cifrado y políticas." 
+      "Confidencialidad evita divulgación no autorizada (p.ej., PII), mediante controles de acceso, cifrado y políticas." 
   },
   {
     id: 52,
@@ -533,7 +533,7 @@ const QUESTIONS = [
     options: ["Evaluación de vulnerabilidades", "Gestión de cambios", "Protocolos de cifrado", "Monitoreo de red"],
     correctIndex: 1,
     explanation:
-      "Change management gobierna solicitudes, evaluación, aprobación y despliegue de cambios para mantener estabilidad, seguridad y compliance." 
+      "La gestión de cambios gobierna solicitudes, evaluación, aprobación y despliegue de cambios para mantener estabilidad, seguridad y compliance." 
   },
   {
     id: 53,
@@ -542,13 +542,13 @@ const QUESTIONS = [
     options: ["5 a 7", "2 a 3", "8 a 10", "1 a 2"],
     correctIndex: 1,
     explanation:
-      "En práctica, 2–3 etiquetas suelen ser manejables y consistentes (p.ej., Public/Internal/Confidential), evitando complejidad excesiva." 
+      "En práctica, 2–3 etiquetas suelen ser manejables y consistentes (p.ej., Público/Interno/Confidencial), evitando complejidad excesiva." 
   },
   {
     id: 54,
     domain: "D5",
-    question: "¿Qué aspecto del change management busca minimizar consecuencias negativas no intencionadas?",
-    options: ["Protocolo de autorización", "Risk analysis", "Respuesta a incidentes", "Supervisión de configuración del sistema"],
+    question: "¿Qué aspecto de la gestión de cambios busca minimizar consecuencias negativas no intencionadas?",
+    options: ["Protocolo de autorización", "Análisis de riesgo", "Respuesta a incidentes", "Supervisión de configuración del sistema"],
     correctIndex: 0,
     explanation:
       "La autorización/aprobación formal obliga a evaluar impacto, riesgos y plan de rollback antes de ejecutar cambios, reduciendo efectos no deseados." 
@@ -557,7 +557,7 @@ const QUESTIONS = [
     id: 55,
     domain: "D4",
     question: "¿Qué concepto se asocia principalmente con proteger la integridad de datos durante la transmisión?",
-    options: ["Cifrado", "Autenticación", "Cortafuegos", "Sistema de Detección de Intrusiones"],
+    options: ["Cifrado", "Autenticación", "Firewall", "Sistema de Detección de Intrusiones"],
     correctIndex: 0,
     explanation:
       "Cifrar el tráfico (p.ej., con TLS) ayuda a proteger la comunicación frente a manipulación/lectura no autorizada durante la transmisión." 
@@ -586,22 +586,22 @@ const QUESTIONS = [
     question: "¿Cuál es el objetivo principal de implementar un Plan de Recuperación ante Desastres (DRP) en cybersecurity?",
     options: [
       "Mejorar rendimiento de red",
-      "Reducir costos de storage",
+      "Reducir costos de almacenamiento",
       "Asegurar continuidad del negocio y restauración de servicios tras una interrupción",
       "Optimizar procesos de desarrollo"
     ],
     correctIndex: 2,
     explanation:
-      "Un DRP busca restaurar sistemas/servicios y minimizar downtime tras un evento disruptivo, apoyando la continuidad del negocio." 
+      "Un DRP busca restaurar sistemas/servicios y minimizar tiempo de inactividad tras un evento disruptivo, apoyando la continuidad del negocio." 
   },
   {
     id: 59,
     domain: "D1",
-    question: "¿Cuál de los siguientes es un deterrent control?",
+    question: "¿Cuál de los siguientes es un control disuasivo?",
     options: ["Guardia de seguridad", "Capacitación en conciencia de seguridad", "Protocolos de cifrado", "Sistema de detección de intrusiones"],
     correctIndex: 0,
     explanation:
-      "La presencia de un guardia de seguridad puede disuadir intentos de intrusión física. IDS es detective; encryption es preventivo técnico; training es administrativo." 
+      "La presencia de un guardia de seguridad puede disuadir intentos de intrusión física. IDS es detectivo; cifrado es preventivo técnico; capacitación es administrativo." 
   },
   {
     id: 60,
@@ -624,7 +624,7 @@ const QUESTIONS = [
   {
     id: 62,
     domain: "D3",
-    question: "¿Qué access control model enfatiza permisos basados en atributos y condiciones ambientales?",
+    question: "¿Qué modelo de control de acceso enfatiza permisos basados en atributos y condiciones ambientales?",
     options: ["RBAC", "DAC", "MAC", "ABAC"],
     correctIndex: 3,
     explanation:
@@ -633,7 +633,7 @@ const QUESTIONS = [
   {
     id: 63,
     domain: "D3",
-    question: "¿Qué access control model se caracteriza por otorgar permisos según responsabilidades y rol del usuario?",
+    question: "¿Qué modelo de control de acceso se caracteriza por otorgar permisos según responsabilidades y rol del usuario?",
     options: ["RBAC", "DAC", "MAC", "RuBAC"],
     correctIndex: 0,
     explanation:
@@ -655,16 +655,16 @@ const QUESTIONS = [
     options: ["Phishing", "Zero-day exploits", "Ingeniería social", "DoS"],
     correctIndex: 1,
     explanation:
-      "Los día cero exploits aprovechan vulnerabilidades desconocidas para el vendor antes de que exista un patch, ofreciendo alta efectividad al atacante." 
+      "Los zero-day exploits aprovechan vulnerabilidades desconocidas para el vendor antes de que exista un patch, ofreciendo alta efectividad al atacante." 
   },
   {
     id: 66,
     domain: "D4",
-    question: "¿Qué cloud model busca combinar características de private cloud y public cloud para un cliente?",
+    question: "¿Qué modelo de nube busca combinar características de nube privada y nube pública para un cliente?",
     options: ["Nube híbrida", "Fusión de nubes", "Integración multi-nube", "Nube dinámica"],
     correctIndex: 0,
     explanation:
-      "Hybrid cloud integra private y public cloud, permitiendo mantener cargas sensibles en privado y usar escalabilidad del público cuando conviene." 
+      "Hybrid cloud integra nube privada y nube pública, permitiendo mantener cargas sensibles en privado y usar escalabilidad del público cuando conviene." 
   },
   {
     id: 67,
@@ -679,10 +679,10 @@ const QUESTIONS = [
     id: 68,
     domain: "D4",
     question: "¿Qué proceso se encarga de identificar continuamente sistemas con desempeño ineficiente, registrar uso y detectar posibles explotaciones?",
-    options: ["Escaneo de vulnerabilidades", "Pruebas de penetración", "Monitoreo y registro", "Gestión de control de acceso"],
+    options: ["Escaneo de vulnerabilidades", "Pruebas de penetración", "Monitoreo y registro de eventos", "Gestión de control de acceso"],
     correctIndex: 2,
     explanation:
-      "Monitoring and logging recolecta telemetría y registros para detectar anomalías, abuso y signos de ataque, además de apoyar troubleshooting." 
+      "El monitoreo y registro de eventos recolecta telemetría y registros para detectar anomalías, abuso y signos de ataque, además de apoyar la resolución de problemas." 
   },
   {
     id: 69,
@@ -705,11 +705,11 @@ const QUESTIONS = [
   {
     id: 71,
     domain: "D1",
-    question: "¿Cuál se considera un preventive control en cybersecurity?",
+    question: "¿Cuál se considera un control preventivo en ciberseguridad?",
     options: ["Sistema de detección de intrusiones", "Cifrado", "Respuesta a incidentes de seguridad", "Capacitación en conciencia de seguridad"],
     correctIndex: 1,
     explanation:
-      "Encryption evita exposición de datos (preventivo). IDS es detective; incident response es reactivo/correctivo; training es administrativo." 
+      "Cifrado evita exposición de datos (preventivo). IDS es detectivo; respuesta a incidentes es reactivo/correctivo; capacitación es administrativo." 
   },
   {
     id: 72,
@@ -737,11 +737,11 @@ const QUESTIONS = [
   {
     id: 74,
     domain: "D5",
-    question: "¿Cuál es un principio fundamental de secure coding practices?",
-    options: ["System updates", "Técnicas de cifrado", "Code review", "Monitoreo de red"],
+    question: "¿Cuál es un principio fundamental de las prácticas de codificación segura?",
+    options: ["Actualizaciones del sistema", "Técnicas de cifrado", "Revisión de código", "Monitoreo de red"],
     correctIndex: 2,
     explanation:
-      "Code review ayuda a detectar vulnerabilidades lógicas, errores y malas prácticas antes de llegar a producción." 
+      "La revisión de código ayuda a detectar vulnerabilidades lógicas, errores y malas prácticas antes de llegar a producción." 
   },
   {
     id: 75,
@@ -811,10 +811,10 @@ const QUESTIONS = [
     id: 81,
     domain: "D4",
     question: "¿Qué término se refiere a un ataque que explota una vulnerabilidad desconocida para el fabricante/vendor?",
-    options: ["Phishing", "Día Cero Attack", "Hombre en el medio", "Denial-of-Service (DoS)"],
+    options: ["Phishing", "Ataque zero-day", "Hombre en el medio", "Denial-of-Service (DoS)"],
     correctIndex: 1,
     explanation:
-      "Un Día Cero Attack aprovecha una falla aún no conocida públicamente o sin patch disponible, atacando antes de que exista corrección." 
+      "Un ataque zero-day aprovecha una falla aún no conocida públicamente o sin patch disponible, atacando antes de que exista corrección." 
   },
   {
     id: 82,
@@ -852,7 +852,7 @@ const QUESTIONS = [
     id: 85,
     domain: "D4",
     question: "¿Cuál es una consideración crítica para ubicar un web server con acceso externo a internet dentro de una red?",
-    options: ["Firewall settings", "Network bandwidth", "DMZ", "Sistema de detección de intrusiones"],
+    options: ["Configuración del Firewall", "Ancho de banda de red", "DMZ", "Sistema de detección de intrusiones"],
     correctIndex: 2,
     explanation:
       "Una DMZ separa servicios expuestos (web) de la red interna, permitiendo controles adicionales y limitando el impacto si el servidor se compromete." 
@@ -906,10 +906,10 @@ const QUESTIONS = [
     id: 91,
     domain: "D4",
     question: "¿Qué método se usa para verificar que un dispositivo cumple requisitos de seguridad antes de acceder a la red?",
-    options: ["Network Control de Acceso (NAC)", "Network encryption", "Sistema de detección de intrusiones", "Configuración de cortafuegos"],
+    options: ["Control de Acceso a la Red (NAC)", "Cifrado de red", "Sistema de detección de intrusiones", "Configuración del Firewall"],
     correctIndex: 0,
     explanation:
-      "NAC valida postura del dispositivo (parches, AV, configuración) y solo permite acceso si cumple políticas; si no, lo restringe/cuaraentena." 
+      "NAC valida postura del dispositivo (parches, AV, configuración) y solo permite acceso si cumple políticas; si no, lo restringe/cuarentena." 
   },
   {
     id: 92,
@@ -946,7 +946,7 @@ const QUESTIONS = [
   {
     id: 95,
     domain: "D2",
-    question: "¿Qué fase típicamente inicia la respuesta de una organización ante posibles security incidents?",
+    question: "¿Qué fase típicamente inicia la respuesta de una organización ante posibles incidentes de seguridad?",
     options: ["Detección", "Recuperación", "Contención", "Preparación"],
     correctIndex: 3,
     explanation:

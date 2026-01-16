@@ -100,7 +100,7 @@ const QUESTIONS = [
 					],
 					correctIndex: 1,
 					explanation:
-						"El hardening incluye eliminar las credenciales predeterminadas porque los nombres de usuario y contraseñas por defecto se explotan comúnmente para obtener acceso no autorizado."
+						"El hardening (endurecimiento) incluye eliminar las credenciales predeterminadas porque los nombres de usuario y contraseñas por defecto se explotan comúnmente para obtener acceso no autorizado."
 				},
 				{
 					id: 9,
@@ -176,7 +176,7 @@ const QUESTIONS = [
 					domain: "D2",
 					question:
 						"En caso de un incidente de seguridad, ¿qué técnica se utiliza comúnmente para limitar la propagación del incidente y minimizar su impacto en la red?",
-					options: ["Cifrado", "Cortafuegos", "Aislamiento", "Autenticación"],
+					options: ["Cifrado", "Firewall", "Aislamiento", "Autenticación"],
 					correctIndex: 2,
 					explanation:
 						"El aislamiento contiene un incidente al segregar sistemas o segmentos afectados para evitar el movimiento lateral y reducir el impacto general."
@@ -333,7 +333,7 @@ const QUESTIONS = [
 		domain: "D2",
 		question:
 			"En caso de un incidente de seguridad, ¿qué técnica se utiliza comúnmente para limitar la propagación del incidente y minimizar su impacto en la red?",
-		options: ["Cifrado", "Cortafuegos", "Aislamiento", "Autenticación"],
+		options: ["Cifrado", "Firewall", "Aislamiento", "Autenticación"],
 		correctIndex: 2,
 		explanation:
 			"El aislamiento contiene un incidente al segregar sistemas o segmentos afectados para evitar el movimiento lateral y reducir el impacto general."
@@ -512,7 +512,7 @@ const QUESTIONS = [
 		id: 43,
 		domain: "D5",
 		question: "¿Cómo se pueden proteger eficazmente los datos en tránsito?",
-		options: ["Cifrado", "Sistema de Detección de Intrusiones (IDS)", "Cortafuegos", "Lista de control de acceso (ACL)"],
+		options: ["Cifrado", "Sistema de Detección de Intrusiones (IDS)", "Firewall", "Lista de control de acceso (ACL)"],
 		correctIndex: 0,
 		explanation:
 			"El cifrado (por ejemplo, TLS) protege los datos en tránsito al evitar la interceptación y ayudar a mantener la confidencialidad e integridad durante la transmisión."
@@ -983,7 +983,7 @@ const QUESTIONS = [
 		id: 85,
 		domain: "D1",
 		question: "¿Cuál de las siguientes medidas de seguridad se clasifica como un control técnico preventivo?",
-		options: ["Sistema de Detección de Intrusiones (IDS)", "Procedimiento", "Detector de humo", "Cortafuegos"],
+		options: ["Sistema de Detección de Intrusiones (IDS)", "Procedimiento", "Detector de humo", "Firewall"],
 		correctIndex: 3,
 		explanation:
 			"Un Firewall es un control técnico preventivo que bloquea/filtra tráfico no autorizado según reglas, ayudando a prevenir incidentes antes de que ocurran."

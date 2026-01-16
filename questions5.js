@@ -45,7 +45,7 @@ const QUESTIONS = [
 		domain: "D4",
 		question:
 			"¿Qué dispositivo suele estar situado frente a un servidor de aplicaciones y gestiona todas las solicitudes de clientes dirigidas hacia él?",
-		options: ["Load Balancer", "Cortafuegos", "Reverse Proxy", "Sistema de Detección de Intrusiones"],
+		options: ["Load Balancer", "Firewall", "Reverse Proxy", "Sistema de Detección de Intrusiones"],
 		correctIndex: 2,
 		explanation:
 			"Un reverse proxy se sitúa delante de los servidores de aplicaciones y enruta las solicitudes de clientes, a menudo añadiendo controles como terminación TLS y filtrado."
@@ -436,7 +436,7 @@ const QUESTIONS = [
 		id: 39,
 		domain: "D4",
 		question: "¿Qué dispositivo de red aplica políticas filtrando el tráfico según un conjunto de reglas?",
-		options: ["Conmutador", "Enrutador", "Concentrador", "Cortafuegos"],
+		options: ["Conmutador", "Enrutador", "Concentrador", "Firewall"],
 		correctIndex: 3,
 		explanation: "Un Firewall filtra el tráfico basado en reglas o políticas de seguridad definidas."
 	},
@@ -682,7 +682,7 @@ const QUESTIONS = [
 		domain: "D3",
 		question:
 			"¿Qué es una salvaguarda o contramedida diseñada para preservar la confidencialidad, integridad y disponibilidad?",
-		options: ["Cortafuegos", "Control", "Cifrado", "Autenticación"],
+		options: ["Firewall", "Control", "Cifrado", "Autenticación"],
 		correctIndex: 1,
 		explanation:
 			"Un control es cualquier salvaguarda o contramedida (administrativa, técnica o física) diseñada para preservar la tríada CIA."
@@ -692,7 +692,7 @@ const QUESTIONS = [
 		domain: "D3",
 		question:
 			"¿Cuál de los siguientes representa la entidad principal que solicita acceso a los activos de información en un contexto de ciberseguridad?",
-		options: ["Servidor", "Sujeto", "Cortafuegos", "Administrador"],
+		options: ["Servidor", "Sujeto", "Firewall", "Administrador"],
 		correctIndex: 1,
 		explanation:
 			"Un sujeto (usuario o proceso) solicita acceso a objetos o recursos; el control de acceso evalúa sus permisos y contexto."
@@ -721,7 +721,7 @@ const QUESTIONS = [
 		domain: "D4",
 		question:
 			"¿Qué término describe un área de red accesible externamente desde internet pero segregada de la red local interna?",
-		options: ["Intranet", "Cortafuegos", "VPN", "DMZ"],
+		options: ["Intranet", "Firewall", "VPN", "DMZ"],
 		correctIndex: 3,
 		explanation:
 			"Una DMZ es un segmento de red aislado que aloja servicios expuestos al público, reduciendo la exposición directa de redes internas."
@@ -804,7 +804,7 @@ const QUESTIONS = [
 		id: 73,
 		domain: "D1",
 		question: "¿Qué métodos electrónicos están diseñados para limitar el acceso a sistemas, activos o áreas?",
-		options: ["Controles de acceso lógicos", "Cortafuegos", "Cifrado", "Sistema de Detección de Intrusiones"],
+		options: ["Controles de acceso lógicos", "Firewall", "Cifrado", "Sistema de Detección de Intrusiones"],
 		correctIndex: 0,
 		explanation:
 			"Los controles de acceso lógicos (mecanismos de autenticación y autorización) restringen el acceso a sistemas y recursos a entidades autorizadas."
@@ -969,7 +969,7 @@ const QUESTIONS = [
 		id: 88,
 		domain: "D3",
 		question: "¿Qué es un registro de eventos que han ocurrido dentro de la red de una organización?",
-		options: ["Cortafuegos", "Antivirus", "Registro", "Cifrado"],
+		options: ["Firewall", "Antivirus", "Registro", "Cifrado"],
 		correctIndex: 2,
 		explanation:
 			"Los logs son registros cronológicos de eventos usados para monitoreo, diagnóstico, detección, auditoría e investigaciones de incidentes."

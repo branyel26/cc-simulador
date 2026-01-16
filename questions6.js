@@ -22,7 +22,7 @@ const QUESTIONS = [
 		options: [
 			"Identificar riesgos potenciales",
 			"Evaluar el cumplimiento regulatorio",
-			"Evaluar necesidades de training de empleados",
+			"Evaluar necesidades de capacitación de empleados",
 			"Priorizar procesos y sistemas críticos para la continuidad"
 		],
 		correctIndex: 3,
@@ -78,7 +78,7 @@ const QUESTIONS = [
 			"Implementar tecnologías avanzadas de threat detection"
 		],
 		correctIndex: 1,
-		explanation: "El objetivo principal de mitigar el riesgo en cybersecurity es implementar controles que reduzcan la probabilidad o severidad de eventos de riesgo. Esto implica identificar vulnerabilidades e implementar medidas como Firewalls, encryption y access controls."
+		explanation: "El objetivo principal de mitigar el riesgo en ciberseguridad es implementar controles que reduzcan la probabilidad o severidad de eventos de riesgo. Esto implica identificar vulnerabilidades e implementar medidas como Firewalls, cifrado y controles de acceso."
 	},
 	{
 		id: 7,
@@ -138,7 +138,7 @@ const QUESTIONS = [
 		question: "¿Qué dispositivo de red es principalmente responsable de monitorear el tráfico para detectar y responder a incidentes de seguridad?",
 		options: [
 			"Enrutador",
-			"Cortafuegos",
+			"Firewall",
 			"IDS",
 			"Conmutador"
 		],
@@ -150,7 +150,7 @@ const QUESTIONS = [
 		domain: "D4",
 		question: "¿Cómo pueden separarse redes de forma lógica para mejorar seguridad y controlar el flujo de tráfico?",
 		options: [
-			"Configuración de cortafuegos",
+			"Configuración del Firewall",
 			"VLAN",
 			"VPN",
 			"Proxy server"
@@ -161,15 +161,15 @@ const QUESTIONS = [
 	{
 		id: 13,
 		domain: "D1",
-		question: "¿Qué práctica está más alineada con promover el principio de Availability en un framework de cybersecurity?",
+		question: "¿Qué práctica está más alineada con promover el principio de Disponibilidad en un marco de ciberseguridad?",
 		options: [
-			"Realizar backups de forma regular",
-			"Implementar access controls fuertes",
+			"Realizar copias de seguridad de forma regular",
+			"Implementar controles de acceso fuertes",
 			"Realizar pruebas de penetración",
 			"Cifrar datos sensibles"
 		],
 		correctIndex: 0,
-		explanation: "El principio de Availability se centra en asegurar que la información y los recursos estén accesibles cuando se necesiten. Los backups regulares ayudan a mitigar el impacto de pérdida de datos o fallas del sistema."
+		explanation: "El principio de Disponibilidad se centra en asegurar que la información y los recursos estén accesibles cuando se necesiten. Las copias de seguridad regulares ayudan a mitigar el impacto de pérdida de datos o fallas del sistema."
 	},
 	{
 		id: 14,
@@ -189,7 +189,7 @@ const QUESTIONS = [
 		domain: "D4",
 		question: "¿Cuál de los siguientes es más efectivo para identificar y detectar actividades sospechosas en un dispositivo personal?",
 		options: [
-			"Cortafuegos",
+			"Firewall",
 			"HIDS",
 			"Network Switch",
 			"Enrutador"
@@ -283,7 +283,7 @@ const QUESTIONS = [
 			"Autorización",
 			"Autenticación",
 			"Cifrado",
-			"Cortafuegos"
+			"Firewall"
 		],
 		correctIndex: 1,
 		explanation: "Authentication es el proceso de confirmar la identidad del usuario antes de otorgar acceso a un sistema o recurso; verifica que la identidad reclamada sea válida."
@@ -322,7 +322,7 @@ const QUESTIONS = [
 			"Capacitación de empleados",
 			"Contactos del personal crítico de la supply chain",
 			"Cifrado de datos",
-			"Configuración de cortafuegos"
+			"Configuración del Firewall"
 		],
 		correctIndex: 1,
 		explanation: "En un BCP integral, contar con contactos del personal crítico de la supply chain es esencial. Esto asegura un canal directo con stakeholders y proveedores durante y después de un evento disruptivo."
@@ -468,7 +468,7 @@ const QUESTIONS = [
 			"Function as a Service (FaaS)"
 		],
 		correctIndex: 0,
-		explanation: "En IaaS, el proveedor cloud gestiona la infraestructura de hardware (servidores, storage y networking), incluyendo el hosting, operación y mantenimiento."
+		explanation: "En IaaS, el proveedor cloud gestiona la infraestructura de hardware (servidores, almacenamiento y redes), incluyendo el hosting, operación y mantenimiento."
 	},
 	{
 		id: 37,
@@ -538,15 +538,15 @@ const QUESTIONS = [
 	{
 		id: 42,
 		domain: "D2",
-		question: "¿Qué constituye una consideración esencial para el éxito de un disaster recovery plan?",
+		question: "¿Qué constituye una consideración esencial para el éxito de un plan de recuperación ante desastres?",
 		options: [
 			"Reuniones de equipo regulares",
 			"Capacitación integral en ciberseguridad",
-			"Una copia del plan almacenada en una ubicación offsite",
+			"Una copia del plan almacenada en una ubicación fuera del sitio",
 			"Actualizaciones continuas de software"
 		],
 		correctIndex: 2,
-		explanation: "Una consideración esencial es almacenar una copia del plan en una ubicación offsite, de forma segura. Esto asegura que el plan esté disponible incluso ante un desastre físico o ambiental."
+		explanation: "Una consideración esencial es almacenar una copia del plan en una ubicación fuera del sitio, de forma segura. Esto asegura que el plan esté disponible incluso ante un desastre físico o ambiental."
 	},
 	{
 		id: 43,
@@ -585,7 +585,7 @@ const QUESTIONS = [
 			"Contratar personal de seguridad para vigilar dumpsters"
 		],
 		correctIndex: 0,
-		explanation: "La forma más efectiva de evitar que alguien recupere información sensible desde documentos desechados es triturarlos (shred) antes de su disposición. El training ayuda, pero el control directo es destruir el soporte físico."
+		explanation: "La forma más efectiva de evitar que alguien recupere información sensible desde documentos desechados es triturarlos antes de su disposición. La capacitación ayuda, pero el control directo es destruir el soporte físico."
 	},
 	{
 		id: 46,
@@ -746,15 +746,15 @@ const QUESTIONS = [
 	{
 		id: 58,
 		domain: "D3",
-		question: "¿Qué modelo de access control es más adecuado para segregar permisos entre los departamentos de Human Resources, Finance, Marketing e IT?",
+		question: "¿Qué modelo de control de acceso es más adecuado para segregar permisos entre los departamentos de Recursos Humanos, Finanzas, Mercadotecnia y TI?",
 		options: [
-			"DAC (Discretionary Control de Acceso)",
-			"MAC (Mandatory Control de Acceso)",
-			"ABAC (Attribute-Based Control de Acceso)",
-			"RBAC (Role-Based Control de Acceso)"
+			"DAC (Control de Acceso Discrecional)",
+			"MAC (Control de Acceso Obligatorio)",
+			"ABAC (Control de Acceso Basado en Atributos)",
+			"RBAC (Control de Acceso Basado en Roles)"
 		],
 		correctIndex: 3,
-		explanation: "RBAC es el más adecuado para segregar permisos entre áreas: el acceso se asigna según roles (por ejemplo, HR, Finance, Marketing, IT), simplificando la administración y el principio de mínimo privilegio."
+		explanation: "RBAC es el más adecuado para segregar permisos entre áreas: el acceso se asigna según roles (por ejemplo, RH, Finanzas, Mercadotecnia, TI), simplificando la administración y el principio de mínimo privilegio."
 	},
 	{
 		id: 59,
@@ -850,15 +850,15 @@ const QUESTIONS = [
 	{
 		id: 66,
 		domain: "D3",
-		question: "¿Qué es la access control list (ACL) de un objeto?",
+		question: "¿Qué es la lista de control de acceso (ACL) de un objeto?",
 		options: [
-			"Una lista de todos los subjects con acceso al objeto.",
+			"Una lista de todos los sujetos con acceso al objeto.",
 			"Un registro de todos los cambios realizados al objeto.",
 			"Un resumen del historial de seguridad del objeto.",
 			"Un catálogo de todos los objetos dentro del sistema."
 		],
 		correctIndex: 0,
-		explanation: "La ACL de un objeto define permisos y restricciones para subjects (usuarios o procesos) sobre ese objeto."
+		explanation: "La ACL de un objeto define permisos y restricciones para sujetos (usuarios o procesos) sobre ese objeto."
 	},
 	{
 		id: 67,
@@ -878,9 +878,9 @@ const QUESTIONS = [
 		domain: "D4",
 		question: "¿Qué control de seguridad puede funcionar como medida física y también como medida técnica, según el contexto en que se implemente?",
 		options: [
-			"Cortafuegos",
+			"Firewall",
 			"Cifrado",
-			"Biometric Control de Acceso System",
+			"Sistema de Control de Acceso Biométrico",
 			"Sistema de Detección de Intrusiones"
 		],
 		correctIndex: 2,
@@ -889,7 +889,7 @@ const QUESTIONS = [
 	{
 		id: 69,
 		domain: "D5",
-		question: "¿Cuál de las siguientes NO se considera un proceso de hardening en cybersecurity?",
+		question: "¿Cuál de las siguientes NO se considera un proceso de hardening (endurecimiento) en ciberseguridad?",
 		options: [
 			"Actualizaciones regulares de software",
 			"Políticas de contraseñas fuertes",
@@ -897,14 +897,14 @@ const QUESTIONS = [
 			"Revisar logs para incidentes"
 		],
 		correctIndex: 3,
-		explanation: "Revisar logs es parte de monitoreo continuo e incident response, no de hardening. El hardening reduce el attack surface mediante configuraciones y controles preventivos."
+		explanation: "Revisar logs es parte de monitoreo continuo e incident response, no de hardening. El hardening (endurecimiento) reduce la superficie de ataque mediante configuraciones y controles preventivos."
 	},
 	{
 		id: 70,
 		domain: "D4",
 		question: "¿Qué herramienta se usa comúnmente para fortalecer sistemas eliminando automáticamente programas no autorizados?",
 		options: [
-			"Cortafuegos",
+			"Firewall",
 			"Endpoint Detection and Response (EDR)",
 			"Sistema de Detección de Intrusiones (IDS)",
 			"Cifrado"
@@ -1097,46 +1097,46 @@ const QUESTIONS = [
 	{
 		id: 85,
 		domain: "D1",
-		question: "¿Cuál es la fuente típica de penalizaciones asociadas a una falta de conformance en cybersecurity?",
+		question: "¿Cuál es la fuente típica de penalizaciones asociadas a una falta de cumplimiento en ciberseguridad?",
 		options: [
-			"User training",
-			"Internal communication",
+			"Capacitación de usuarios",
+			"Comunicación interna",
 			"Regulaciones",
-			"External audits"
+			"Auditorías externas"
 		],
 		correctIndex: 2,
-		explanation: "La fuente típica de penalizaciones es el incumplimiento de Regulations. Los entes reguladores establecen reglas y estándares para proteger información sensible."
+		explanation: "La fuente típica de penalizaciones es el incumplimiento de regulaciones. Los entes reguladores establecen reglas y estándares para proteger información sensible."
 	},
 	{
 		id: 86,
 		domain: "D1",
-		question: "¿Qué representa la CIA triad en el contexto de cybersecurity?",
+		question: "¿Qué representa la tríada CIA en el contexto de ciberseguridad?",
 		options: [
-			"Confidentiality, Integrity, and Availability",
-			"Confidentiality, Identity, and Authorization",
-			"Confidentiality, Intrusion, and Authentication",
-			"Consistency, Integrity, and Authorization"
+			"Confidencialidad, Integridad y Disponibilidad",
+			"Confidencialidad, Identidad y Autorización",
+			"Confidencialidad, Intrusión y Autenticación",
+			"Consistencia, Integridad y Autorización"
 		],
 		correctIndex: 0,
-		explanation: "La CIA triad es un concepto fundamental que agrupa tres principios: Confidentiality, Integrity y Availability."
+		explanation: "La tríada CIA es un concepto fundamental que agrupa tres principios: Confidencialidad, Integridad y Disponibilidad."
 	},
 	{
 		id: 87,
 		domain: "D4",
-		question: "¿Qué es un event en el contexto de cybersecurity?",
+		question: "¿Qué es un evento en el contexto de ciberseguridad?",
 		options: [
-			"A security breach",
+			"Una brecha de seguridad",
 			"Cualquier ocurrencia observable en una red o sistema.",
 			"Mantenimiento rutinario del sistema",
-			"Software installation"
+			"Instalación de software"
 		],
 		correctIndex: 1,
-		explanation: "Un event es cualquier ocurrencia observable en una red o sistema: logins, modificaciones de archivos, alertas del sistema o tráfico de red, entre otras."
+		explanation: "Un evento es cualquier ocurrencia observable en una red o sistema: logins, modificaciones de archivos, alertas del sistema o tráfico de red, entre otras."
 	},
 	{
 		id: 88,
 		domain: "D2",
-		question: "¿Qué término describe mejor una ocurrencia imprevista que amenaza la Confidentiality, Integrity o Availability de un sistema de información?",
+		question: "¿Qué término describe mejor una ocurrencia imprevista que amenaza la Confidencialidad, Integridad o Disponibilidad de un sistema de información?",
 		options: [
 			"Vulnerabilidad",
 			"Riesgo",
@@ -1144,7 +1144,7 @@ const QUESTIONS = [
 			"Incidente"
 		],
 		correctIndex: 3,
-		explanation: "Un Incident es una ocurrencia imprevista que amenaza la Confidentiality, Integrity o Availability de un sistema de información."
+		explanation: "Un Incidente es una ocurrencia imprevista que amenaza la Confidencialidad, Integridad o Disponibilidad de un sistema de información."
 	},
 	{
 		id: 89,
