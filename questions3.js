@@ -5,11 +5,11 @@ const QUESTIONS = [
 	{
 		id: 1,
 		domain: "D1",
-		question: "¿Qué dos elementos son esenciales para calcular el riesgo en cybersecurity?",
+		question: "¿Qué dos elementos son esenciales para calcular el riesgo en ciberseguridad?",
 		options: [
 			"Amenazas y vulnerabilidades",
 			"Impacto y probabilidad (likelihood)",
-			"Security controls and compliance",
+			"Controles de seguridad y cumplimiento",
 			"Incident response and recovery"
 		],
 		correctIndex: 1,
@@ -19,7 +19,7 @@ const QUESTIONS = [
 	{
 		id: 2,
 		domain: "D2",
-		question: "¿Cuál de las siguientes NO se considera una responsabilidad principal de un Operaciones de Seguridad Center (SOC)?",
+		question: "¿Cuál de las siguientes NO se considera una responsabilidad principal de un Centro de Operaciones de Seguridad (SOC)?",
 		options: ["Análisis de logs", "Detección de intrusiones", "Autenticación de usuario", "Gestión de parches"],
 		correctIndex: 3,
 		explanation:
@@ -32,7 +32,7 @@ const QUESTIONS = [
 		options: ["MAC", "RBAC", "ABAC", "DAC"],
 		correctIndex: 2,
 		explanation:
-			"ABAC (Attribute-Based Control de Acceso) decide el acceso en función de atributos del sujeto, del recurso y del contexto, permitiendo reglas más granulares que RBAC."
+			"ABAC (Control de Acceso Basado en Atributos) decide el acceso en función de atributos del sujeto, del recurso y del contexto, permitiendo reglas más granulares que RBAC."
 	},
 	{
 		id: 4,
@@ -46,7 +46,7 @@ const QUESTIONS = [
 	{
 		id: 5,
 		domain: "D5",
-		question: "¿Cuál de los siguientes elementos es crucial para mejorar la postura de cybersecurity mediante entrenamiento a empleados?",
+		question: "¿Cuál de los siguientes elementos es crucial para mejorar la postura de ciberseguridad mediante entrenamiento a empleados?",
 		options: ["Mejores prácticas de contraseñas", "Medidas de seguridad física", "Software antivirus", "Network firewalls"],
 		correctIndex: 0,
 		explanation:
@@ -64,7 +64,7 @@ const QUESTIONS = [
 	{
 		id: 7,
 		domain: "D1",
-		question: "¿Qué política de cybersecurity está diseñada específicamente para proteger el manejo de Información de Identificación Personal (PII)?",
+		question: "¿Qué política de ciberseguridad está diseñada específicamente para proteger el manejo de Información de Identificación Personal (PII)?",
 		options: ["Política de cifrado de datos", "Política de control de acceso", "Política de privacidad", "Política de respuesta a incidentes"],
 		correctIndex: 2,
 		explanation:
@@ -82,7 +82,7 @@ const QUESTIONS = [
 	{
 		id: 9,
 		domain: "D1",
-		question: "¿Cuál es un elemento fundamental de nivel superior en la gobernanza de cybersecurity?",
+		question: "¿Cuál es un elemento fundamental de nivel superior en la gobernanza de ciberseguridad?",
 		options: ["Capacitación en conciencia de seguridad", "Monitoreo de cumplimiento", "Gestión de riesgos", "Política"],
 		correctIndex: 3,
 		explanation:
@@ -92,8 +92,8 @@ const QUESTIONS = [
 		id: 10,
 		domain: "D3",
 		question:
-			"¿Qué enfoque de cybersecurity enfatiza otorgar mínimo privilegio y verificar/validar estrictamente el acceso de cada usuario?",
-		options: ["Trustworthy Security Model", "Inclusive Security Model", "Open Trust Security Model", "Confianza Cero Security Model"],
+			"¿Qué enfoque de ciberseguridad enfatiza otorgar mínimo privilegio y verificar/validar estrictamente el acceso de cada usuario?",
+		options: ["Modelo de Seguridad Confiable", "Modelo de Seguridad Inclusivo", "Modelo de Seguridad de Confianza Abierta", "Modelo de Seguridad Confianza Cero"],
 		correctIndex: 3,
 		explanation:
 			"Confianza Cero asume que no se debe confiar implícitamente; exige verificación continua y aplica mínimo privilegio para reducir el radio de impacto."
@@ -129,22 +129,22 @@ const QUESTIONS = [
 		options: ["Identificación", "Análisis de detección", "Mitigation planning", "Response strategy"],
 		correctIndex: 0,
 		explanation:
-			"La fase de Identification identifica assets, amenazas y vulnerabilidades para luego evaluar impacto/probabilidad y priorizar tratamiento."
+			"La fase de Identificación identifica activos, amenazas y vulnerabilidades para luego evaluar impacto/probabilidad y priorizar tratamiento."
 	},
 	{
 		id: 14,
 		domain: "D5",
 		question:
 			"¿Qué principio/tecnología criptográfica asegura la integridad y el origen de un mensaje (y soporta non-repudiation)?",
-		options: ["Medidas de confidencialidad", "Firma Digitals", "Firewall protection", "Hash functions"],
+		options: ["Medidas de confidencialidad", "Firmas Digitales", "Protección de Firewall", "Funciones hash"],
 		correctIndex: 1,
 		explanation:
-			"Las Firma Digitals permiten verificar autenticidad e integridad, y soportan non-repudiation mediante criptografía asimétrica."
+			"Las Firmas Digitales permiten verificar autenticidad e integridad, y soportan no repudio mediante criptografía asimétrica."
 	},
 	{
 		id: 15,
 		domain: "D1",
-		question: "¿Cuál de los siguientes NO es un elemento clave de la CIA triad en cybersecurity?",
+		question: "¿Cuál de los siguientes NO es un elemento clave de la tríada CIA en ciberseguridad?",
 		options: ["Asequibilidad", "Integridad", "Confidencialidad", "Disponibilidad"],
 		correctIndex: 0,
 		explanation:
@@ -164,7 +164,7 @@ const QUESTIONS = [
 		id: 17,
 		domain: "D2",
 		question: "¿Qué elemento normalmente NO se incluye en un incident response plan?",
-		options: ["Estimaciones de costos financieros", "Identification of critical assets", "Estrategias de comunicación", "Procedimientos de escalamiento"],
+		options: ["Estimaciones de costos financieros", "Identificación de activos críticos", "Estrategias de comunicación", "Procedimientos de escalamiento"],
 		correctIndex: 0,
 		explanation:
 			"Un IR plan describe roles, comunicación, escalamiento y procesos de respuesta. Estimaciones financieras suelen tratarse después (post-incident / recuperación)."
@@ -177,7 +177,7 @@ const QUESTIONS = [
 		options: ["Respuesta a incidentes", "Debido cuidado", "Evaluación de riesgos", "Gestión de configuración"],
 		correctIndex: 1,
 		explanation:
-			"Due care implica ejercer diligencia razonable: implementar controles apropiados y actuar de forma preventiva para reducir riesgos."
+			"El debido cuidado (Due care) implica ejercer diligencia razonable: implementar controles apropiados y actuar de forma preventiva para reducir riesgos."
 	},
 	{
 		id: 19,
@@ -208,7 +208,7 @@ const QUESTIONS = [
 		domain: "D1",
 		question:
 			"¿Qué tipo de dato se utiliza más comúnmente en organizaciones de salud para almacenar información de pacientes de forma segura?",
-		options: ["ePHI (Electronic Información de Salud Protegida)", "Social Security numbers", "Formularios de historial médico", "Datos biométricos"],
+		options: ["ePHI (Información de Salud Protegida Electrónica)", "Números de Seguro Social", "Formularios de historial médico", "Datos biométricos"],
 		correctIndex: 0,
 		explanation:
 			"En contextos tipo HIPAA, ePHI representa información de salud protegida en formato electrónico y requiere controles fuertes de seguridad y privacidad."
@@ -217,11 +217,11 @@ const QUESTIONS = [
 		id: 22,
 		domain: "D1",
 		question:
-			"¿Cuál es la pérdida financiera esperada anual para un evento de riesgo asociado a un asset de información?",
-		options: ["Risk Exposure", "Annual Loss Expectancy", "Single Loss Expectancy", "Risk Impact"],
+			"¿Cuál es la pérdida financiera esperada anual para un evento de riesgo asociado a un activo de información?",
+		options: ["Exposición al riesgo", "Expectativa de Pérdida Anual", "Expectativa de Pérdida Única", "Impacto del riesgo"],
 		correctIndex: 1,
 		explanation:
-			"Annual Loss Expectancy (ALE) estima la pérdida anual esperada; típicamente ALE = SLE × ARO."
+			"La Expectativa de Pérdida Anual (ALE) estima la pérdida anual esperada; típicamente ALE = SLE × ARO."
 	},
 	{
 		id: 23,
@@ -245,7 +245,7 @@ const QUESTIONS = [
 	{
 		id: 25,
 		domain: "D1",
-		question: "¿Cuál práctica es un ejemplo de control correctivo (corrective control) en cybersecurity?",
+		question: "¿Cuál práctica es un ejemplo de control correctivo en ciberseguridad?",
 		options: ["Monitoreo de red", "Sistema de supresión de incendios", "Control de acceso", "Cifrado de datos"],
 		correctIndex: 1,
 		explanation:
@@ -254,7 +254,7 @@ const QUESTIONS = [
 	{
 		id: 26,
 		domain: "D1",
-		question: "¿Qué tipo de control describe mejor el patch management?",
+		question: "¿Qué tipo de control describe mejor la gestión de parches?",
 		options: ["Administrativo", "Físico", "Technical corrective", "Detectivo"],
 		correctIndex: 2,
 		explanation:
@@ -283,7 +283,7 @@ const QUESTIONS = [
 		id: 29,
 		domain: "D1",
 		question:
-			"¿Qué representa el aspecto principal de un requisito de compliance típicamente gestionado por entidades gubernamentales?",
+			"¿Qué representa el aspecto principal de un requisito de cumplimiento normativo típicamente gestionado por entidades gubernamentales?",
 		options: ["Capacitación en conciencia de seguridad", "Desarrollo de políticas", "Evaluación de riesgos", "Regulaciones"],
 		correctIndex: 3,
 		explanation:
@@ -351,10 +351,10 @@ const QUESTIONS = [
 		id: 36,
 		domain: "D4",
 		question: "¿Qué medida puede ayudar de forma efectiva a prevenir ataques potenciales en la red de una organización?",
-		options: ["Firewall", "Software antivirus", "Gestión de parches", "NIPS"],
+		options: ["Firewall", "Software antivirus", "Gestión de parches", "NIPS (Sistema de Prevención de Intrusiones en Red)"],
 		correctIndex: 3,
 		explanation:
-			"Un NIPS (Network Sistema de Prevención de Intrusiones) puede detectar y bloquear tráfico malicioso en línea, evitando explotación."
+			"Un NIPS (Sistema de Prevención de Intrusiones en Red) puede detectar y bloquear tráfico malicioso en línea, evitando explotación."
 	},
 	{
 		id: 37,
@@ -388,8 +388,8 @@ const QUESTIONS = [
 		id: 40,
 		domain: "D3",
 		question:
-			"En el modelo Discretionary Control de Acceso (DAC), ¿quién tiene la responsabilidad de definir permisos de acceso a recursos?",
-		options: ["Owner of the resource", "Security officer", "Administrador de sistemas", "Network administrator"],
+			"En el modelo de Control de Acceso Discrecional (DAC), ¿quién tiene la responsabilidad de definir permisos de acceso a recursos?",
+		options: ["Propietario del recurso", "Oficial de seguridad", "Administrador de sistemas", "Administrador de red"],
 		correctIndex: 0,
 		explanation:
 			"En DAC el owner del recurso decide quién puede acceder (grant/revoke)."
@@ -407,8 +407,8 @@ const QUESTIONS = [
 		id: 42,
 		domain: "D5",
 		question:
-			"¿Qué método de social engineering implica revisar la basura/material descartado de una empresa para hallar información confidencial?",
-		options: ["Phishing dirigido", "Búsqueda en basura", "Tailgating (Seguimiento)", "Shoulder surfing"],
+			"¿Qué método de ingeniería social implica revisar la basura/material descartado de una empresa para hallar información confidencial?",
+		options: ["Phishing dirigido", "Revisión de basura (Dumpster diving)", "Tailgating (Seguimiento)", "Shoulder surfing"],
 		correctIndex: 1,
 		explanation:
 			"Dumpster diving consiste en buscar información en desechos (papeles, medios, empaques) cuando no hay destrucción segura."
@@ -416,7 +416,7 @@ const QUESTIONS = [
 	{
 		id: 43,
 		domain: "D1",
-		question: "¿Cuál es el objetivo final del último canon del (ISC)² Code of Ethics?",
+		question: "¿Cuál es el objetivo final del último canon del Código de Ética de (ISC)²?",
 		options: ["Asegurar la privacidad individual", "Avanzar y proteger la profesión", "Promover el bienestar de la comunidad", "Mantener y mejorar la integridad de la profesión"],
 		correctIndex: 1,
 		explanation:
@@ -425,17 +425,17 @@ const QUESTIONS = [
 	{
 		id: 44,
 		domain: "D5",
-		question: "¿Qué es un security baseline?",
-		options: ["Requisitos máximos de seguridad", "Configuraciones de seguridad óptimas", "Medidas de seguridad variables", "Minimum acceptable security requirements"],
+		question: "¿Qué es una línea base de seguridad?",
+		options: ["Requisitos máximos de seguridad", "Configuraciones de seguridad óptimas", "Medidas de seguridad variables", "Requisitos de seguridad mínimos aceptables"],
 		correctIndex: 3,
 		explanation:
-			"Un baseline define el mínimo aceptable de configuración/controles para un entorno, asegurando consistencia y un nivel base de protección."
+			"Una línea base define el mínimo aceptable de configuración/controles para un entorno, asegurando consistencia y un nivel base de protección."
 	},
 	{
 		id: 45,
 		domain: "D4",
 		question: "¿Cómo puede una organización mejorar su capacidad de detectar ataques dentro de su red?",
-		options: ["Deploying Sistema de Detección de Intrusiones (IDS)", "Regularly updating antivirus software", "Realizando capacitación de empleados", "Implementando strong password policies"],
+		options: ["Implementar Sistema de Detección de Intrusiones (IDS)", "Actualizar regularmente el software antivirus", "Realizando capacitación de empleados", "Implementando políticas de contraseñas fuertes"],
 		correctIndex: 0,
 		explanation:
 			"IDS monitorea y alerta sobre actividades sospechosas/anómalas en red/sistemas, elevando visibilidad y detección."
@@ -444,7 +444,7 @@ const QUESTIONS = [
 		id: 46,
 		domain: "D4",
 		question: "¿Qué es un acuerdo formal que establece un entendimiento común entre dos o más partes?",
-		options: ["Acuerdo de No Divulgación", "Memorandum of Understanding (MOU)", "Acuerdo de Nivel de Servicio", "Acuerdo de licencia de usuario final"],
+		options: ["Acuerdo de No Divulgación", "Memorándum de Entendimiento (MOU)", "Acuerdo de Nivel de Servicio", "Acuerdo de licencia de usuario final"],
 		correctIndex: 1,
 		explanation:
 			"Un MOU documenta objetivos y responsabilidades compartidas; suele ser menos vinculante que un contrato estricto."
@@ -454,15 +454,15 @@ const QUESTIONS = [
 		domain: "D1",
 		question:
 			"¿Qué método de tratamiento de riesgo es más adecuado para mitigar el riesgo de tsunamis que afecten operaciones en una zona costera?",
-		options: ["Risk acceptance", "Risk transfer", "Risk avoidance", "Risk mitigation"],
+		options: ["Aceptación del riesgo", "Transferencia del riesgo", "Evitación del riesgo", "Mitigación del riesgo"],
 		correctIndex: 1,
 		explanation:
-			"Risk transfer (p. ej., seguro) transfiere el impacto financiero a un tercero; para desastres naturales suele ser la opción más práctica."
+			"La transferencia del riesgo (p. ej., seguro) transfiere el impacto financiero a un tercero; para desastres naturales suele ser la opción más práctica."
 	},
 	{
 		id: 48,
 		domain: "D4",
-		question: "¿Qué característica define a un nation-state threat actor en cyber warfare?",
+		question: "¿Qué característica define a un actor de amenaza de estado-nación en guerra cibernética?",
 		options: [
 			"Frequent use of script kiddie tools",
 			"Opportunistic targeting of random individuals",
@@ -534,11 +534,11 @@ const QUESTIONS = [
 	{
 		id: 55,
 		domain: "D3",
-		question: "En el modelo Mandatory Control de Acceso (MAC), ¿quién asigna/define permisos de acceso?",
-		options: ["Network administrators", "Security analysts", "Security administrators", "Usuarios finales"],
+		question: "En el modelo de Control de Acceso Obligatorio (MAC), ¿quién asigna/define permisos de acceso?",
+		options: ["Administradores de red", "Analistas de seguridad", "Administradores de seguridad", "Usuarios finales"],
 		correctIndex: 2,
 		explanation:
-			"En MAC, la autoridad central (security administrators) define reglas y labels/clearances; el usuario final no decide permisos."
+			"En MAC, la autoridad central (administradores de seguridad) define reglas y etiquetas/autorizaciones; el usuario final no decide permisos."
 	},
 	{
 		id: 56,
@@ -710,7 +710,7 @@ const QUESTIONS = [
 		id: 73,
 		domain: "D3",
 		question:
-			"¿Cuál es el elemento principal utilizado para definir permisos de acceso en una Control de Acceso List (ACL)?",
+			"¿Cuál es el elemento principal utilizado para definir permisos de acceso en una Lista de Control de Acceso (ACL)?",
 		options: ["Regla", "User credentials", "Firewall settings", "Claves de cifrado"],
 		correctIndex: 0,
 		explanation:
@@ -722,9 +722,9 @@ const QUESTIONS = [
 		question: "¿Cuál es la definición de un “SLA”?",
 		options: [
 			"A systematic list of authorized users",
-			"An agreement between two cybersecurity professionals",
+			"Un acuerdo entre dos profesionales de ciberseguridad",
 			"A security log analysis tool",
-			"A contract between the customer and the service provider defining the service level delivery expectations"
+			"Un contrato entre el cliente y el proveedor de servicios que define las expectativas de nivel de servicio"
 		],
 		correctIndex: 3,
 		explanation:
@@ -753,11 +753,11 @@ const QUESTIONS = [
 		id: 77,
 		domain: "D2",
 		question:
-			"En forensics, ¿cuál es el requisito principal para asegurar la admisibilidad de evidencia digital en un tribunal?",
+			"En análisis forense, ¿cuál es el requisito principal para asegurar la admisibilidad de evidencia digital en un tribunal?",
 		options: ["Cifrado de datos", "Expert testimony", "Incident response plan", "Cadena de custodia"],
 		correctIndex: 3,
 		explanation:
-			"Chain of custody documenta quién tuvo la evidencia, cuándo y cómo se preservó, demostrando integridad y evitando dudas de manipulación."
+			"La cadena de custodia documenta quién tuvo la evidencia, cuándo y cómo se preservó, demostrando integridad y evitando dudas de manipulación."
 	},
 	{
 		id: 78,
@@ -793,7 +793,7 @@ const QUESTIONS = [
 		id: 81,
 		domain: "D1",
 		question:
-			"¿Qué canon del (ISC)² Code of Ethics enfatiza específicamente el compromiso de 'Avanzar y proteger la profesión'?",
+			"¿Qué canon del Código de Ética de (ISC)² enfatiza específicamente el compromiso de 'Avanzar y proteger la profesión'?",
 		options: ["Canon 4", "Canon 3", "Canon 2", "Canon 1"],
 		correctIndex: 0,
 		explanation:
@@ -871,7 +871,7 @@ const QUESTIONS = [
 		options: ["Gestión de riesgos", "Incident handling", "Gestión de Cambios", "Control de configuración"],
 		correctIndex: 2,
 		explanation:
-			"Gestión de Cambios evalúa, aprueba, planifica y documenta cambios para reducir riesgo, evitar tiempo de inactividad y mantener estabilidad/compliance."
+			"Gestión de Cambios evalúa, aprueba, planifica y documenta cambios para reducir riesgo, evitar tiempo de inactividad y mantener estabilidad/cumplimiento."
 	},
 	{
 		id: 89,
@@ -934,7 +934,7 @@ const QUESTIONS = [
 		],
 		correctIndex: 0,
 		explanation:
-			"PCI-DSS (Payment Card Industry Seguridad de Datos Standard) define requisitos para proteger datos de tarjetas en almacenamiento/procesamiento/transmisión."
+			"PCI-DSS (Estándar de Seguridad de Datos de la Industria de Tarjetas de Pago) define requisitos para proteger datos de tarjetas en almacenamiento/procesamiento/transmisión."
 	},
 	{
 		id: 95,

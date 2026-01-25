@@ -8,13 +8,13 @@ const QUESTIONS = [
     question: "¿Cuál es el énfasis principal del canon del (ISC)² Code of Ethics ‘Provide diligent and competent service to principals’?",
     options: [
       "Preservar el valor, respetar la confianza otorgada y evitar conflictos de interés",
-      "Asegurar cumplimiento legal en prácticas de cybersecurity",
-      "Demostrar pericia técnica y dominio en servicios de cybersecurity",
+      "Asegurar cumplimiento legal en prácticas de ciberseguridad",
+      "Demostrar pericia técnica y dominio en servicios de ciberseguridad",
       "Priorizar el beneficio personal sobre los intereses de la organización"
     ],
     correctIndex: 0,
     explanation:
-      "Este canon se centra en el comportamiento ético al servir a los ‘principals’: proteger el valor de los assets de información, honrar la confianza depositada y evitar conflictos de interés que afecten la imparcialidad."
+      "Este canon se centra en el comportamiento ético al servir a los ‘principals’: proteger el valor de los activos de información, honrar la confianza depositada y evitar conflictos de interés que afecten la imparcialidad."
   },
   {
     id: 2,
@@ -46,7 +46,7 @@ const QUESTIONS = [
   {
     id: 5,
     domain: "D5",
-    question: "¿Qué acción es la más apropiada para un dispositivo que no cumple con los requisitos del security baseline?",
+    question: "¿Qué acción es la más apropiada para un dispositivo que no cumple con los requisitos de la línea base de seguridad?",
     options: [
       "Aislar o poner en cuarentena el dispositivo",
       "Degradar temporalmente los protocolos de seguridad",
@@ -55,7 +55,7 @@ const QUESTIONS = [
     ],
     correctIndex: 0,
     explanation:
-      "Un dispositivo fuera de baseline puede representar riesgo (misconfig o compromiso). Aislar/quarantinar reduce el impacto mientras se corrige y valida el cumplimiento." 
+      "Un dispositivo fuera de la línea base puede representar riesgo (mala configuración o compromiso). Aislar/poner en cuarentena reduce el impacto mientras se corrige y valida el cumplimiento." 
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ const QUESTIONS = [
   {
     id: 7,
     domain: "D4",
-    question: "¿Qué significa la sigla ‘SIEM’ en cybersecurity?",
+    question: "¿Qué significa la sigla ‘SIEM’ en ciberseguridad?",
     options: [
       "Systematic Incident and Event Monitoring",
       "Gestión de Información y Eventos de Seguridad",
@@ -141,7 +141,7 @@ const QUESTIONS = [
     options: ["MAC", "DAC", "RBAC", "ABAC"],
     correctIndex: 0,
     explanation:
-      "Bell-LaPadula es un modelo de Mandatory Control de Acceso (MAC) enfocado en Confidentiality mediante labels/clearances (p.ej., ‘no read up, no write down’)." 
+      "Bell-LaPadula es un modelo de Control de Acceso Obligatorio (MAC) enfocado en Confidencialidad mediante etiquetas/autorizaciones (p.ej., ‘no read up, no write down’)." 
   },
   {
     id: 15,
@@ -205,7 +205,7 @@ const QUESTIONS = [
     options: ["Ciberdelincuente", "Infiltrador de sistemas", "Actor de amenaza", "Analista de seguridad"],
     correctIndex: 2,
     explanation:
-      "Threat actor es el término general para quien intenta explotar vulnerabilidades (por dinero, espionaje, disrupción, etc.)." 
+      "Actor de amenaza es el término general para quien intenta explotar vulnerabilidades (por dinero, espionaje, disrupción, etc.)." 
   },
   {
     id: 21,
@@ -297,7 +297,7 @@ const QUESTIONS = [
   {
     id: 29,
     domain: "D5",
-    question: "¿Cuál es el componente principal de Gestión de Cambios en cybersecurity?",
+    question: "¿Cuál es el componente principal de Gestión de Cambios en ciberseguridad?",
     options: ["Evaluación de riesgos", "Proceso de aprobación", "Respuesta a incidentes", "Gestión de configuración"],
     correctIndex: 1,
     explanation:
@@ -310,7 +310,7 @@ const QUESTIONS = [
     options: ["Autenticación biométrica", "Algoritmos de cifrado", "Cámaras de seguridad", "Capacitación en conciencia de seguridad"],
     correctIndex: 3,
     explanation:
-      "Los administrative controls incluyen políticas, procedimientos y capacitación. Capacitación en conciencia de seguridad es el ejemplo típico." 
+      "Los controles administrativos incluyen políticas, procedimientos y capacitación. Capacitación en conciencia de seguridad es el ejemplo típico." 
   },
   {
     id: 31,
@@ -338,7 +338,7 @@ const QUESTIONS = [
   {
     id: 33,
     domain: "D1",
-    question: "¿Qué categorías abarcan los security controls que cubren distintos aspectos del entorno de una organización?",
+    question: "¿Qué categorías abarcan los controles de seguridad que cubren distintos aspectos del entorno de una organización?",
     options: [
       "Procesal, Táctico y Reactivo",
       "Reactivo, Lógico y Estratégico",
@@ -361,7 +361,7 @@ const QUESTIONS = [
   {
     id: 35,
     domain: "D4",
-    question: "¿Qué amenaza de cybersecurity está diseñada específicamente para crear una entrada oculta (hidden entry point) para control remoto no autorizado?",
+    question: "¿Qué amenaza de ciberseguridad está diseñada específicamente para crear una entrada oculta (punto de entrada oculto) para control remoto no autorizado?",
     options: ["Spyware", "Ransomware", "Adware (Software publicitario)", "Backdoor (puerta trasera)"],
     correctIndex: 3,
     explanation:
@@ -379,7 +379,7 @@ const QUESTIONS = [
   {
     id: 37,
     domain: "D1",
-    question: "¿Cuál es un objetivo clave al implementar security controls en el framework de cybersecurity de una organización?",
+    question: "¿Cuál es un objetivo clave al implementar controles de seguridad en el framework de ciberseguridad de una organización?",
     options: [
       "Aumentar velocidad de red",
       "Reducir el riesgo y el impacto de potenciales incidentes",
@@ -434,7 +434,7 @@ const QUESTIONS = [
   {
     id: 42,
     domain: "D1",
-    question: "¿Cuál es el documento fundamental dentro de una organización que asegura el cumplimiento de medidas de cybersecurity?",
+    question: "¿Cuál es el documento fundamental dentro de una organización que asegura el cumplimiento de medidas de ciberseguridad?",
     options: ["Política de seguridad", "Manual del empleado", "Código de conducta", "Procedure manual"],
     correctIndex: 0,
     explanation:
@@ -457,7 +457,7 @@ const QUESTIONS = [
   {
     id: 44,
     domain: "D4",
-    question: "En cybersecurity, ¿cuál es el propósito principal de un Firewall?",
+    question: "En ciberseguridad, ¿cuál es el propósito principal de un Firewall?",
     options: ["Monitoreo de red", "Autenticación de usuario", "Control de acceso", "Cifrado de datos"],
     correctIndex: 2,
     explanation:
@@ -475,7 +475,7 @@ const QUESTIONS = [
   {
     id: 46,
     domain: "D4",
-    question: "¿Cuál NO suele ser una responsabilidad de un SOC (Operaciones de Seguridad Center)?",
+    question: "¿Cuál NO suele ser una responsabilidad de un SOC (Centro de Operaciones de Seguridad)?",
     options: ["Monitoreo de tráfico de red", "Investigando incidentes de seguridad", "Gestionando nómina de empleados", "Analizando registros de seguridad"],
     correctIndex: 2,
     explanation:
@@ -502,11 +502,11 @@ const QUESTIONS = [
   {
     id: 49,
     domain: "D3",
-    question: "¿Cuál aspecto es el componente principal de Identity and Gestión de Acceso (IAM)?",
-    options: ["Password policies", "User provisioning", "Autenticación biométrica", "Configuración de firewall de red"],
+    question: "¿Cuál aspecto es el componente principal de Gestión de Identidad y Acceso (IAM)?",
+    options: ["Políticas de contraseñas", "Aprovisionamiento de usuarios", "Autenticación biométrica", "Configuración de firewall de red"],
     correctIndex: 1,
     explanation:
-      "User provisioning gestiona altas/bajas y asignación de accesos según roles/funciones; es núcleo de IAM." 
+      "El aprovisionamiento de usuarios gestiona altas/bajas y asignación de accesos según roles/funciones; es núcleo de IAM." 
   },
   {
     id: 50,
@@ -529,16 +529,16 @@ const QUESTIONS = [
   {
     id: 52,
     domain: "D5",
-    question: "¿Qué control es principalmente responsable de gestionar y autorizar cambios en la infraestructura de cybersecurity?",
+    question: "¿Qué control es principalmente responsable de gestionar y autorizar cambios en la infraestructura de ciberseguridad?",
     options: ["Evaluación de vulnerabilidades", "Gestión de cambios", "Protocolos de cifrado", "Monitoreo de red"],
     correctIndex: 1,
     explanation:
-      "La gestión de cambios gobierna solicitudes, evaluación, aprobación y despliegue de cambios para mantener estabilidad, seguridad y compliance." 
+      "La gestión de cambios gobierna solicitudes, evaluación, aprobación y despliegue de cambios para mantener estabilidad, seguridad y cumplimiento." 
   },
   {
     id: 53,
     domain: "D5",
-    question: "¿Cuál es el número ideal de data labels que pueden administrarse eficientemente?",
+    question: "¿Cuál es el número ideal de etiquetas de datos que pueden administrarse eficientemente?",
     options: ["5 a 7", "2 a 3", "8 a 10", "1 a 2"],
     correctIndex: 1,
     explanation:
@@ -575,7 +575,7 @@ const QUESTIONS = [
     id: 57,
     domain: "D1",
     question: "¿Qué práctica mitiga de forma más efectiva el riesgo de acceso no autorizado por credenciales robadas?",
-    options: ["Actualizaciones del sistema regulares", "Autenticación multifactor", "Segmentación de red", "Intrusion detection systems"],
+    options: ["Actualizaciones del sistema regulares", "Autenticación multifactor", "Segmentación de red", "Sistemas de detección de intrusiones"],
     correctIndex: 1,
     explanation:
       "MFA añade un factor adicional, reduciendo el impacto de credenciales comprometidas (una contraseña sola no basta)." 
@@ -583,7 +583,7 @@ const QUESTIONS = [
   {
     id: 58,
     domain: "D2",
-    question: "¿Cuál es el objetivo principal de implementar un Plan de Recuperación ante Desastres (DRP) en cybersecurity?",
+    question: "¿Cuál es el objetivo principal de implementar un Plan de Recuperación ante Desastres (DRP) en ciberseguridad?",
     options: [
       "Mejorar rendimiento de red",
       "Reducir costos de almacenamiento",
@@ -718,7 +718,7 @@ const QUESTIONS = [
     options: ["Estrategias de mitigación de riesgos", "Proceso de aprobación", "Escaneo de vulnerabilidades", "Líneas base"],
     correctIndex: 3,
     explanation:
-      "Los baselines son la configuración de referencia. Cualquier desviación se evalúa y se corrige/aprueba para mantener consistencia y control." 
+      "Las líneas base son la configuración de referencia. Cualquier desviación se evalúa y se corrige/aprueba para mantener consistencia y control." 
   },
   {
     id: 73,
@@ -773,7 +773,7 @@ const QUESTIONS = [
   {
     id: 78,
     domain: "D1",
-    question: "¿Cuál representa el tercer canon del (ISC)² Code of Ethics?",
+    question: "¿Cuál representa el tercer canon del Código de Ética de (ISC)²?",
     options: [
       "Preservar el valor de los datos y la privacidad",
       "Actuar de manera honorable, honesta, justa, responsable y legal",
@@ -789,7 +789,7 @@ const QUESTIONS = [
     domain: "D5",
     question: "¿Qué se recomienda hacer antes de implementar patches en un entorno de producción?",
     options: [
-      "Hacer un risk assessment",
+      "Hacer una evaluación de riesgos",
       "Respaldar (backup) el entorno de producción",
       "Iniciar un incident response plan",
       "Configurar settings de management"
@@ -819,7 +819,7 @@ const QUESTIONS = [
   {
     id: 82,
     domain: "D1",
-    question: "¿Qué concepto enfatiza el primer tenet del (ISC)² code of ethics?",
+    question: "¿Qué concepto enfatiza el primer principio del Código de Ética de (ISC)²?",
     options: [
       "Proteger a la sociedad, la confianza pública y la infraestructura crítica",
       "Respeto por la privacidad individual",
@@ -878,7 +878,7 @@ const QUESTIONS = [
   {
     id: 88,
     domain: "D1",
-    question: "¿Qué principio de gobernanza provee sugerencias no vinculantes (advisory) en cybersecurity?",
+    question: "¿Qué principio de gobernanza provee sugerencias no vinculantes (de asesoramiento) en ciberseguridad?",
     options: ["Políticas", "Procedimientos", "Estándares", "Guías"],
     correctIndex: 3,
     explanation:
@@ -926,13 +926,13 @@ const QUESTIONS = [
     question: "¿Qué es ePHI?",
     options: [
       "Electronic Personnel Health Information",
-      "Electronic Información de Salud Protegida",
+      "Información de Salud Protegida Electrónica",
       "Información de salud de paciente de emergencia",
       "Encrypted Personal Health Identification"
     ],
     correctIndex: 1,
     explanation:
-      "ePHI es Electronic Información de Salud Protegida: información de salud identificable almacenada o transmitida electrónicamente; requiere protección y compliance (p.ej., HIPAA)." 
+      "ePHI es Información de Salud Protegida Electrónica: información de salud identificable almacenada o transmitida electrónicamente; requiere protección y cumplimiento (p.ej., HIPAA)." 
   },
   {
     id: 94,
@@ -950,7 +950,7 @@ const QUESTIONS = [
     options: ["Detección", "Recuperación", "Contención", "Preparación"],
     correctIndex: 3,
     explanation:
-      "Preparation es primero: define roles, herramientas, playbooks y entrenamiento. Luego vienen detección/análisis, contención, erradicación, recuperación y lecciones aprendidas." 
+      "La preparación es primero: define roles, herramientas, guías de procedimientos y entrenamiento. Luego vienen detección/análisis, contención, erradicación, recuperación y lecciones aprendidas." 
   },
   {
     id: 96,
@@ -964,7 +964,7 @@ const QUESTIONS = [
   {
     id: 97,
     domain: "D4",
-    question: "¿Cuál es el propósito fundamental de un penetration test?",
+    question: "¿Cuál es el propósito fundamental de una prueba de penetración?",
     options: ["Monitoreo de red", "Identificación de vulnerabilidades", "Protección de endpoints", "Capacitación en conciencia de seguridad"],
     correctIndex: 1,
     explanation:
@@ -973,7 +973,7 @@ const QUESTIONS = [
   {
     id: 98,
     domain: "D5",
-    question: "¿Qué es pretexting en cybersecurity?",
+    question: "¿Qué es pretexting en ciberseguridad?",
     options: ["Modelado avanzado de amenazas", "Técnica de ingeniería social", "Pruebas de penetración de red", "Análisis de protocolos criptográficos"],
     correctIndex: 1,
     explanation:

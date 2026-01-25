@@ -31,14 +31,14 @@ const QUESTIONS = [
 		domain: "D3",
 		question: "¿Qué modelo de control de acceso establece permisos basados en un conjunto de reglas definidas?",
 		options: [
-			"Mandatory Control de Acceso (MAC)",
-			"Rule-Based Control de Acceso (RuBAC)",
-			"Role-Based Control de Acceso (RBAC)",
-			"Discretionary Control de Acceso (DAC)"
+			"Control de Acceso Obligatorio (MAC)",
+			"Control de Acceso Basado en Reglas (RuBAC)",
+			"Control de Acceso Basado en Roles (RBAC)",
+			"Control de Acceso Discrecional (DAC)"
 		],
 		correctIndex: 1,
 		explanation:
-			"Rule-Based Control de Acceso utiliza reglas o condiciones predefinidas para permitir o denegar el acceso (a menudo según el estado del sistema o el entorno)."
+			"El Control de Acceso Basado en Reglas utiliza reglas o condiciones predefinidas para permitir o denegar el acceso (a menudo según el estado del sistema o el entorno)."
 	},
 	{
 		id: 4,
@@ -205,7 +205,7 @@ const QUESTIONS = [
 	{
 		id: 19,
 		domain: "D3",
-		question: "¿Qué describe mejor el principio de \"need to know\" en ciberseguridad?",
+		question: "¿Qué describe mejor el principio de \"necesidad de conocer\" en ciberseguridad?",
 		options: [
 			"Todos los empleados deben tener acceso a toda la información de la empresa.",
 			"El acceso a la información debe limitarse a lo necesario para que una persona realice su trabajo.",
@@ -214,7 +214,7 @@ const QUESTIONS = [
 		],
 		correctIndex: 1,
 		explanation:
-			"Need-to-know limita el acceso a la información a lo que una persona requiere para hacer su trabajo, reduciendo la exposición."
+			"La necesidad de conocer (Need-to-know) limita el acceso a la información a lo que una persona requiere para hacer su trabajo, reduciendo la exposición."
 	},
 	{
 		id: 20,
@@ -288,7 +288,7 @@ const QUESTIONS = [
 	{
 		id: 27,
 		domain: "D3",
-		question: "¿Qué afirmación describe correctamente Mandatory Control de Acceso (MAC) en un contexto de ciberseguridad?",
+		question: "¿Qué afirmación describe correctamente el Control de Acceso Obligatorio (MAC) en un contexto de ciberseguridad?",
 		options: [
 			"Los sujetos pueden conceder libremente sus privilegios a otros sujetos.",
 			"Los permisos de acceso se asignan según roles y responsabilidades laborales.",
@@ -336,11 +336,11 @@ const QUESTIONS = [
 			"Respuesta a incidentes, evaluación de riesgos, despliegue",
 			"Cifrado de datos, configuración de Firewall, actualizaciones de software",
 			"Copia de seguridad del sistema, segmentación de red, control de acceso",
-			"Request for Change (RFC), aprobación, rollback"
+			"Solicitud de Cambio (RFC), aprobación, reversión"
 		],
 		correctIndex: 3,
 		explanation:
-			"La gestión de cambios suele incluir un RFC, aprobación formal, implementación controlada y planes de rollback si algo sale mal."
+			"La gestión de cambios suele incluir un RFC, aprobación formal, implementación controlada y planes de reversión si algo sale mal."
 	},
 	{
 		id: 31,
@@ -369,7 +369,7 @@ const QUESTIONS = [
 	{
 		id: 33,
 		domain: "D3",
-		question: "¿Cuál es una propiedad fundamental del modelo Mandatory Control de Acceso (MAC)?",
+		question: "¿Cuál es una propiedad fundamental del modelo de Control de Acceso Obligatorio (MAC)?",
 		options: [
 			"Los sujetos pueden cambiar libremente las reglas de control de acceso.",
 			"Los objetos determinan su propio control de acceso.",
@@ -597,11 +597,11 @@ const QUESTIONS = [
 			"Network Attack Configuration",
 			"Network Authentication Control",
 			"Network Application Ciphering",
-			"Network Control de Acceso"
+			"Control de Acceso a la Red"
 		],
 		correctIndex: 3,
 		explanation:
-			"NAC (Network Control de Acceso) aplica quién o qué puede conectarse a una red según identidad y postura del dispositivo."
+			"NAC (Control de Acceso a la Red) aplica quién o qué puede conectarse a una red según identidad y postura del dispositivo."
 	},
 	{
 		id: 55,
@@ -637,7 +637,7 @@ const QUESTIONS = [
 	{
 		id: 58,
 		domain: "D3",
-		question: "¿Cuál de las siguientes describe mejor una característica de Discretionary Control de Acceso (DAC)?",
+		question: "¿Cuál de las siguientes describe mejor una característica de Control de Acceso Discrecional (DAC)?",
 		options: [
 			"Permite que un sujeto modifique las reglas que rigen el control de acceso",
 			"Aplica control de acceso basado en reglas predefinidas",
@@ -661,7 +661,7 @@ const QUESTIONS = [
 		],
 		correctIndex: 2,
 		explanation:
-			"La preparación incluye definir planes de comunicación y coordinación de stakeholders para asegurar una respuesta eficiente y consistente."
+			"La preparación incluye definir planes de comunicación y coordinación de partes interesadas para asegurar una respuesta eficiente y consistente."
 	},
 	{
 		id: 60,
@@ -711,7 +711,7 @@ const QUESTIONS = [
 		id: 64,
 		domain: "D4",
 		question: "¿Qué documento usarían dos partes para acordar formalmente los términos de una relación de trabajo?",
-		options: ["Acuerdo de Nivel de Servicio", "Memorandum of Understanding (MOU)", "Acuerdo de No Divulgación", "End-User License Agreement"],
+		options: ["Acuerdo de Nivel de Servicio", "Memorándum de Entendimiento (MOU)", "Acuerdo de No Divulgación", "Acuerdo de Licencia de Usuario Final"],
 		correctIndex: 1,
 		explanation:
 			"Un MOU documenta términos y expectativas acordadas para colaborar y suele servir como base formal de la relación de trabajo."
@@ -1086,7 +1086,7 @@ const QUESTIONS = [
 		],
 		correctIndex: 2,
 		explanation:
-			"Los árboles de llamadas y mecanismos de notificación proporcionan comunicación estructurada y rápida a los stakeholders durante un incidente o interrupción."
+			"Los árboles de llamadas y mecanismos de notificación proporcionan comunicación estructurada y rápida a las partes interesadas durante un incidente o interrupción."
 	},
 	{
 		id: 99,
@@ -1102,10 +1102,10 @@ const QUESTIONS = [
 		id: 100,
 		domain: "D4",
 		question:
-			"¿Qué tipo de sistema Firewall combina diversas funcionalidades de gestión de amenazas como proxies, Sistema de Prevención de Intrusioness (IPS) y Identity and Gestión de Acceso (IAM) en una plataforma unificada?",
-		options: ["Stateful firewall", "Packet-filtering firewall", "Next-generation firewall", "Firewall proxy"],
+			"¿Qué tipo de sistema Firewall combina diversas funcionalidades de gestión de amenazas como proxies, Sistema de Prevención de Intrusiones (IPS) y Gestión de Identidad y Acceso (IAM) en una plataforma unificada?",
+		options: ["Firewall con estado", "Firewall de filtrado de paquetes", "Firewall de próxima generación", "Firewall proxy"],
 		correctIndex: 2,
 		explanation:
-			"Los Next-generation firewalls (NGFW) integran inspección avanzada y controles de amenazas (por ejemplo, IPS, app awareness, funciones de identidad) en una sola plataforma."
+			"Los Firewalls de próxima generación (NGFW) integran inspección avanzada y controles de amenazas (por ejemplo, IPS, reconocimiento de aplicaciones, funciones de identidad) en una sola plataforma."
 	}
 ];

@@ -5,7 +5,7 @@ const QUESTIONS = [
 	{
 		id: 1,
 		domain: "D1",
-		question: "¿Cuándo es justificable aceptar el riesgo en cybersecurity?",
+		question: "¿Cuándo es justificable aceptar el riesgo en ciberseguridad?",
 		options: [
 			"Cuando el impacto potencial en la reputación es mínimo.",
 			"Cuando la organización cuenta con un Plan de Respuesta a Incidentes robusto.",
@@ -13,12 +13,12 @@ const QUESTIONS = [
 			"Cuando existe incertidumbre sobre el threat landscape."
 		],
 		correctIndex: 2,
-		explanation: "Aceptar el riesgo en cybersecurity es una decisión estratégica basada en un análisis costo-beneficio. Si el gasto de implementar controles adicionales supera las pérdidas financieras potenciales ante un compromise, puede ser justificable aceptar el riesgo."
+		explanation: "Aceptar el riesgo en ciberseguridad es una decisión estratégica basada en un análisis costo-beneficio. Si el gasto de implementar controles adicionales supera las pérdidas financieras potenciales ante un compromiso, puede ser justificable aceptar el riesgo."
 	},
 	{
 		id: 2,
 		domain: "D2",
-		question: "¿Cuál es el objetivo principal de realizar un Análisis de Impacto al Negocio (BIA) dentro del framework de cybersecurity de una organización?",
+		question: "¿Cuál es el objetivo principal de realizar un Análisis de Impacto al Negocio (BIA) dentro del marco de ciberseguridad de una organización?",
 		options: [
 			"Identificar riesgos potenciales",
 			"Evaluar el cumplimiento regulatorio",
@@ -59,23 +59,23 @@ const QUESTIONS = [
 		domain: "D5",
 		question: "¿Qué método criptográfico es fundamental para el funcionamiento de las digital signatures?",
 		options: [
-			"Criptografía de clave simétrica (symmetric key cryptography)",
+			"Criptografía de clave simétrica",
 			"Esteganografía",
-			"Criptografía de clave pública (clave pública cryptography)",
-			"Transposition cryptography"
+			"Criptografía de clave pública",
+			"Criptografía de transposición"
 		],
 		correctIndex: 2,
-		explanation: "Las digital signatures dependen de clave pública cryptography, que usa un par de llaves: una clave pública y una clave privada. El emisor usa su clave privada para firmar el mensaje (y el receptor verifica usando la clave pública correspondiente)."
+		explanation: "Las firmas digitales dependen de la criptografía de clave pública, que usa un par de llaves: una clave pública y una clave privada. El emisor usa su clave privada para firmar el mensaje (y el receptor verifica usando la clave pública correspondiente)."
 	},
 	{
 		id: 6,
 		domain: "D1",
-		question: "¿Cuál es el objetivo principal de mitigar el riesgo en cybersecurity?",
+		question: "¿Cuál es el objetivo principal de mitigar el riesgo en ciberseguridad?",
 		options: [
 			"Crear una infraestructura de seguridad compleja",
 			"Implementar controles para minimizar la probabilidad o el impacto de eventos de riesgo",
 			"Realizar vulnerability assessments de forma regular",
-			"Implementar tecnologías avanzadas de threat detection"
+			"Implementar tecnologías avanzadas de detección de amenazas"
 		],
 		correctIndex: 1,
 		explanation: "El objetivo principal de mitigar el riesgo en ciberseguridad es implementar controles que reduzcan la probabilidad o severidad de eventos de riesgo. Esto implica identificar vulnerabilidades e implementar medidas como Firewalls, cifrado y controles de acceso."
@@ -83,15 +83,15 @@ const QUESTIONS = [
 	{
 		id: 7,
 		domain: "D1",
-		question: "¿Cuál de las siguientes actividades es primordial para asegurar el cumplimiento de estándares y obligaciones en cybersecurity, considerando requisitos regulatorios y contractuales?",
+		question: "¿Cuál de las siguientes actividades es primordial para asegurar el cumplimiento de estándares y obligaciones en ciberseguridad, considerando requisitos regulatorios y contractuales?",
 		options: [
 			"Capacitación en conciencia de seguridad",
 			"Copias de seguridad del sistema regulares",
-			"Maintaining compliance",
+			"Mantener el cumplimiento",
 			"Monitoreo de red"
 		],
 		correctIndex: 2,
-		explanation: "En cybersecurity, mantener compliance es clave para cumplir estándares y obligaciones. Implica evaluar continuamente y alinear prácticas de seguridad con requisitos regulatorios y compromisos contractuales."
+		explanation: "En ciberseguridad, mantener el cumplimiento es clave para cumplir estándares y obligaciones. Implica evaluar continuamente y alinear prácticas de seguridad con requisitos regulatorios y compromisos contractuales."
 	},
 	{
 		id: 8,
@@ -109,7 +109,7 @@ const QUESTIONS = [
 	{
 		id: 9,
 		domain: "D4",
-		question: "¿Cuál de las siguientes opciones es un threat vector?",
+		question: "¿Cuál de las siguientes opciones es un vector de amenaza?",
 		options: [
 			"Un atacante externo malicioso escaneando el entorno de la organización en busca de vulnerabilidades",
 			"Errores no intencionales de empleados",
@@ -117,7 +117,7 @@ const QUESTIONS = [
 			"Acceso físico a cuartos de servidores"
 		],
 		correctIndex: 0,
-		explanation: "Un threat vector es el medio o camino por el cual un threat actor ejecuta un ataque. Un atacante externo malicioso que escanea el entorno para encontrar vulnerabilidades es un ejemplo de threat vector."
+		explanation: "Un vector de amenaza es el medio o camino por el cual un actor de amenaza ejecuta un ataque. Un atacante externo malicioso que escanea el entorno para encontrar vulnerabilidades es un ejemplo de vector de amenaza."
 	},
 	{
 		id: 10,
@@ -174,7 +174,7 @@ const QUESTIONS = [
 	{
 		id: 14,
 		domain: "D4",
-		question: "¿Cuál opción describe mejor la diferencia principal entre Sistema de Detección de Intrusiones (IDS) e Sistema de Prevención de Intrusioness (IPS)?",
+		question: "¿Cuál opción describe mejor la diferencia principal entre Sistema de Detección de Intrusiones (IDS) y Sistema de Prevención de Intrusiones (IPS)?",
 		options: [
 			"Un IDS se centra en detectar amenazas potenciales, mientras que un IPS detecta y además previene activamente amenazas identificadas.",
 			"IDS and IPS both solely focus on preventing cyber threats.",
@@ -195,12 +195,12 @@ const QUESTIONS = [
 			"Enrutador"
 		],
 		correctIndex: 1,
-		explanation: "Un Host-based Sistema de Detección de Intrusiones (HIDS) es lo más efectivo para detectar actividades sospechosas en un endpoint. Un HIDS monitorea y analiza eventos y comportamientos en el host/dispositivo."
+		explanation: "Un Sistema de Detección de Intrusiones Basado en Host (HIDS) es lo más efectivo para detectar actividades sospechosas en un endpoint. Un HIDS monitorea y analiza eventos y comportamientos en el host/dispositivo."
 	},
 	{
 		id: 16,
 		domain: "D5",
-		question: "¿Cuál de las siguientes prácticas NO se recomienda para asegurar una cybersecurity robusta?",
+		question: "¿Cuál de las siguientes prácticas NO se recomienda para asegurar una ciberseguridad robusta?",
 		options: [
 			"Actualizar el antivirus regularmente",
 			"Usar passwords fuertes y únicos para cada sistema",
@@ -226,7 +226,7 @@ const QUESTIONS = [
 	{
 		id: 18,
 		domain: "D1",
-		question: "¿Cuál es el segundo canon del (ISC)² Code of Ethics?",
+		question: "¿Cuál es el segundo canon del Código de Ética de (ISC)²?",
 		options: [
 			"Protect society, the common good, necessary public trust, and the infrastructure.",
 			"Actuar de manera honorable, honesta, justa, responsable y legal.",
@@ -234,7 +234,7 @@ const QUESTIONS = [
 			"Avanzar y proteger la profesión."
 		],
 		correctIndex: 1,
-		explanation: "El segundo canon del (ISC)² Code of Ethics enfatiza que los profesionales de cybersecurity deben actuar con integridad: de manera honorable, honesta, justa, responsable y legal."
+		explanation: "El segundo canon del Código de Ética de (ISC)² enfatiza que los profesionales de ciberseguridad deben actuar con integridad: de manera honorable, honesta, justa, responsable y legal."
 	},
 	{
 		id: 19,
@@ -265,7 +265,7 @@ const QUESTIONS = [
 	{
 		id: 21,
 		domain: "D1",
-		question: "¿Qué principio constituye el primer canon del (ISC)² Code of Ethics?",
+		question: "¿Qué principio constituye el primer canon del Código de Ética de (ISC)²?",
 		options: [
 			"Proteger intereses personales",
 			"Asegurar ganancia personal",
@@ -273,7 +273,7 @@ const QUESTIONS = [
 			"Proteger a la sociedad, el bien común, la confianza pública necesaria y la infraestructura"
 		],
 		correctIndex: 3,
-		explanation: "El primer canon del (ISC)² Code of Ethics enfatiza la responsabilidad de priorizar el bienestar de la sociedad, promover el bien común, mantener la confianza pública y proteger infraestructura crítica."
+		explanation: "El primer canon del Código de Ética de (ISC)² enfatiza la responsabilidad de priorizar el bienestar de la sociedad, promover el bien común, mantener la confianza pública y proteger infraestructura crítica."
 	},
 	{
 		id: 22,
@@ -304,7 +304,7 @@ const QUESTIONS = [
 	{
 		id: 24,
 		domain: "D1",
-		question: "¿Cuál de las siguientes opciones representa un technical control en cybersecurity?",
+		question: "¿Cuál de las siguientes opciones representa un control técnico en ciberseguridad?",
 		options: [
 			"Capacitación en conciencia de seguridad",
 			"Desarrollo de políticas de seguridad",
@@ -312,7 +312,7 @@ const QUESTIONS = [
 			"Vendor management"
 		],
 		correctIndex: 2,
-		explanation: "Un technical control es un control implementado mediante tecnología para gestionar acceso, proteger sistemas y hacer cumplir políticas. La implementación de un Firewall es un technical control."
+		explanation: "Un control técnico es un control implementado mediante tecnología para gestionar acceso, proteger sistemas y hacer cumplir políticas. La implementación de un Firewall es un control técnico."
 	},
 	{
 		id: 25,
@@ -325,7 +325,7 @@ const QUESTIONS = [
 			"Configuración del Firewall"
 		],
 		correctIndex: 1,
-		explanation: "En un BCP integral, contar con contactos del personal crítico de la supply chain es esencial. Esto asegura un canal directo con stakeholders y proveedores durante y después de un evento disruptivo."
+		explanation: "En un BCP integral, contar con contactos del personal crítico de la cadena de suministro es esencial. Esto asegura un canal directo con partes interesadas y proveedores durante y después de un evento disruptivo."
 	},
 	{
 		id: 26,
@@ -343,7 +343,7 @@ const QUESTIONS = [
 	{
 		id: 27,
 		domain: "D5",
-		question: "¿Cuál es una ventaja significativa del symmetric encryption?",
+		question: "¿Cuál es una ventaja significativa del cifrado simétrico?",
 		options: [
 			"Distribución mejorada de claves",
 			"Increased complexity",
@@ -351,7 +351,7 @@ const QUESTIONS = [
 			"Menor overhead y mayor velocidad"
 		],
 		correctIndex: 3,
-		explanation: "El symmetric encryption suele ser más rápido y con menos overhead computacional, porque se usa la misma clave para cifrar y descifrar, reduciendo el costo de procesamiento."
+		explanation: "El cifrado simétrico suele ser más rápido y con menos overhead computacional, porque se usa la misma clave para cifrar y descifrar, reduciendo el costo de procesamiento."
 	},
 	{
 		id: 28,
@@ -369,7 +369,7 @@ const QUESTIONS = [
 	{
 		id: 29,
 		domain: "D2",
-		question: "Dentro de un Incident Response Team, ¿qué rol suele encargarse de la comunicación con medios externos y stakeholders durante un incidente?",
+		question: "Dentro de un Equipo de Respuesta a Incidentes, ¿qué rol suele encargarse de la comunicación con medios externos y partes interesadas durante un incidente?",
 		options: [
 			"Technical Analyst",
 			"Relaciones públicas",
@@ -377,7 +377,7 @@ const QUESTIONS = [
 			"Legal Counsel"
 		],
 		correctIndex: 1,
-		explanation: "El rol de Public Relations se encarga de preparar y comunicar mensajes a medios, clientes y otros stakeholders para asegurar que se difunda información correcta y consistente."
+		explanation: "El rol de Relaciones Públicas se encarga de preparar y comunicar mensajes a medios, clientes y otras partes interesadas para asegurar que se difunda información correcta y consistente."
 	},
 	{
 		id: 30,
@@ -399,11 +399,11 @@ const QUESTIONS = [
 		options: [
 			"Evaluación de riesgos",
 			"Risk treatment",
-			"Risk mitigation",
+			"Mitigación de riesgos",
 			"Remediación de riesgos"
 		],
 		correctIndex: 0,
-		explanation: "Risk assessment es un proceso fundamental que consiste en identificar, estimar y priorizar riesgos potenciales que una organización puede enfrentar."
+		explanation: "La evaluación de riesgos es un proceso fundamental que consiste en identificar, estimar y priorizar riesgos potenciales que una organización puede enfrentar."
 	},
 	{
 		id: 32,
@@ -447,7 +447,7 @@ const QUESTIONS = [
 	{
 		id: 35,
 		domain: "D5",
-		question: "¿Qué proceso se encarga de reducir el attack surface implementando configuraciones seguras?",
+		question: "¿Qué proceso se encarga de reducir la superficie de ataque implementando configuraciones seguras?",
 		options: [
 			"Escaneo de vulnerabilidades",
 			"Gestión de parches",
@@ -455,7 +455,7 @@ const QUESTIONS = [
 			"Detección de intrusiones"
 		],
 		correctIndex: 2,
-		explanation: "Security hardening reduce el attack surface aplicando configuraciones seguras en sistemas, redes y aplicaciones. Incluye eliminar servicios innecesarios y cerrar puertos no usados."
+		explanation: "El endurecimiento de seguridad (Security hardening) reduce la superficie de ataque aplicando configuraciones seguras en sistemas, redes y aplicaciones. Incluye eliminar servicios innecesarios y cerrar puertos no usados."
 	},
 	{
 		id: 36,
@@ -499,7 +499,7 @@ const QUESTIONS = [
 	{
 		id: 39,
 		domain: "D5",
-		question: "¿Qué acción implica tomar precauciones razonables para verificar acciones realizadas en cybersecurity?",
+		question: "¿Qué acción implica tomar precauciones razonables para verificar acciones realizadas en ciberseguridad?",
 		options: [
 			"Diligencia en ciberseguridad",
 			"Security scrutiny",
@@ -507,12 +507,12 @@ const QUESTIONS = [
 			"Debida Diligencia"
 		],
 		correctIndex: 3,
-		explanation: "En cybersecurity, due diligence es el proceso de tomar precauciones razonables y evaluar cuidadosamente antes de implementar cambios o tomar decisiones."
+		explanation: "En ciberseguridad, la debida diligencia (due diligence) es el proceso de tomar precauciones razonables y evaluar cuidadosamente antes de implementar cambios o tomar decisiones."
 	},
 	{
 		id: 40,
 		domain: "D4",
-		question: "En el contexto de cybersecurity, ¿cómo se relacionan threats y vulnerabilities?",
+		question: "En el contexto de ciberseguridad, ¿cómo se relacionan amenazas y vulnerabilidades?",
 		options: [
 			"Threats are mitigated by vulnerabilities",
 			"Vulnerabilities exploit threats",
@@ -603,7 +603,7 @@ const QUESTIONS = [
 	{
 		id: 47,
 		domain: "D3",
-		question: "¿Cuál es un beneficio principal de implementar un mantrap como medida de physical security?",
+		question: "¿Cuál es un beneficio principal de implementar una esclusa de seguridad (mantrap) como medida de seguridad física?",
 		options: [
 			"Autenticación biométrica",
 			"Vigilancia CCTV",
@@ -616,10 +616,10 @@ const QUESTIONS = [
 	{
 		id: 48,
 		domain: "D4",
-		question: "¿Qué threat actor es más probable que esté patrocinado por organizaciones gubernamentales?",
+		question: "¿Qué actor de amenaza es más probable que esté patrocinado por organizaciones gubernamentales?",
 		options: [
 			"Hacktivistas",
-			"Insider threats",
+			"Amenazas internas (insider threats)",
 			"Ciberdelincuentes",
 			"Nation states"
 		],
@@ -629,7 +629,7 @@ const QUESTIONS = [
 	{
 		id: 49,
 		domain: "D4",
-		question: "¿Qué tipo de threat actor suele tener habilidades de bajo nivel y depende de herramientas fácilmente accesibles en internet para realizar ataques?",
+		question: "¿Qué tipo de actor de amenaza suele tener habilidades de bajo nivel y depende de herramientas fácilmente accesibles en internet para realizar ataques?",
 		options: [
 			"Nation-state actors",
 			"Hacktivistas",
@@ -637,20 +637,20 @@ const QUESTIONS = [
 			"Script Kiddie"
 		],
 		correctIndex: 3,
-		explanation: "Un Script Kiddie es un threat actor con poca experiencia que usa scripts y herramientas ya hechas disponibles en internet para ejecutar ataques."
+		explanation: "Un Script Kiddie es un actor de amenaza con poca experiencia que usa scripts y herramientas ya hechas disponibles en internet para ejecutar ataques."
 	},
 	{
 		id: 50,
 		domain: "D2",
 		question: "¿En qué fase del incident response plan suele abordarse la identificación del atacante?",
 		options: [
-			"Containment, Eradication, and Recovery",
+			"Contención, Erradicación y Recuperación",
 			"Preparación",
-			"Detection & Analysis",
-			"Post-Incident Activity"
+			"Detección y Análisis",
+			"Actividad Post-Incidente"
 		],
 		correctIndex: 2,
-		explanation: "La identificación del atacante normalmente se aborda durante Detection & Analysis, cuando se analiza evidencia (logs, IOCs, trazas) para entender qué pasó y quién/qué lo originó. En Containment/Eradication/Recovery el foco está en contener y remediar."
+		explanation: "La identificación del atacante normalmente se aborda durante Detección y Análisis, cuando se analiza evidencia (logs, IOCs, trazas) para entender qué pasó y quién/qué lo originó. En Contención/Erradicación/Recuperación el foco está en contener y remediar."
 	},
 	{
 		id: 51,
@@ -681,15 +681,15 @@ const QUESTIONS = [
 	{
 		id: 53,
 		domain: "D2",
-		question: "Después de un incidente de cybersecurity, ¿qué proceso crucial ocurre durante la fase post-incident activity del ciclo de incident response?",
+		question: "Después de un incidente de ciberseguridad, ¿qué proceso crucial ocurre durante la fase de actividad post-incidente del ciclo de respuesta a incidentes?",
 		options: [
 			"Realizando una evaluación de riesgos",
-			"Documentar lessons learned del incidente",
-			"Implementando new security controls",
+			"Documentar lecciones aprendidas del incidente",
+			"Implementando nuevos controles de seguridad",
 			"Ejecutando una prueba de penetración"
 		],
 		correctIndex: 1,
-		explanation: "En post-incident activity, es crucial documentar lessons learned: analizar la respuesta, identificar fortalezas, debilidades y oportunidades de mejora."
+		explanation: "En la actividad post-incidente, es crucial documentar lecciones aprendidas: analizar la respuesta, identificar fortalezas, debilidades y oportunidades de mejora."
 	},
 	{
 		id: 54,
@@ -720,7 +720,7 @@ const QUESTIONS = [
 	{
 		id: 56,
 		domain: "D5",
-		question: "¿Cuál es el objetivo principal de implementar una password policy en el framework de cybersecurity de una organización?",
+		question: "¿Cuál es el objetivo principal de implementar una política de contraseñas en el marco de ciberseguridad de una organización?",
 		options: [
 			"Hacer cumplir passwords fuertes y un manejo seguro",
 			"Mejorando la comodidad del usuario",
@@ -824,7 +824,7 @@ const QUESTIONS = [
 	{
 		id: 64,
 		domain: "D4",
-		question: "¿Cuál es la principal ventaja de implementar soluciones de Prevención de Pérdida de Datos (DLP) en una estrategia de cybersecurity?",
+		question: "¿Cuál es la principal ventaja de implementar soluciones de Prevención de Pérdida de Datos (DLP) en una estrategia de ciberseguridad?",
 		options: [
 			"Aumento de velocidad de red",
 			"Mejorar la autenticación de usuarios",
@@ -837,7 +837,7 @@ const QUESTIONS = [
 	{
 		id: 65,
 		domain: "D4",
-		question: "¿Qué concepto de cybersecurity enfatiza implementar salvaguardas en múltiples capas para lograr objetivos de seguridad?",
+		question: "¿Qué concepto de ciberseguridad enfatiza implementar salvaguardas en múltiples capas para lograr objetivos de seguridad?",
 		options: [
 			"Single Point of Failure",
 			"Point-to-Point Security",
@@ -905,7 +905,7 @@ const QUESTIONS = [
 		question: "¿Qué herramienta se usa comúnmente para fortalecer sistemas eliminando automáticamente programas no autorizados?",
 		options: [
 			"Firewall",
-			"Endpoint Detection and Response (EDR)",
+			"Detección y Respuesta en Endpoints (EDR)",
 			"Sistema de Detección de Intrusiones (IDS)",
 			"Cifrado"
 		],
@@ -930,10 +930,10 @@ const QUESTIONS = [
 		domain: "D4",
 		question: "¿Cuáles de los siguientes son ejemplos de side channel attacks?",
 		options: [
-			"Social engineering, phishing, and spear-phishing",
+			"Ingeniería social, phishing y spear-phishing",
 			"Encryption, hashing, and digital signatures",
 			"Fault analysis, power monitoring, and timing",
-			"Firewall configuration, intrusion detection systems, and antivirus scanning"
+			"Configuración de Firewall, sistemas de detección de intrusiones y escaneo antivirus"
 		],
 		correctIndex: 2,
 		explanation: "Los side channel attacks explotan información filtrada por canales no intencionales como consumo de energía, radiación electromagnética o patrones de timing."
@@ -993,7 +993,7 @@ const QUESTIONS = [
 	{
 		id: 77,
 		domain: "D1",
-		question: "En cybersecurity, ¿qué proceso se relaciona principalmente con cómo se gestiona una organización y cómo se toman decisiones?",
+		question: "En ciberseguridad, ¿qué proceso se relaciona principalmente con cómo se gestiona una organización y cómo se toman decisiones?",
 		options: [
 			"Análisis de amenazas",
 			"Gobernanza",
@@ -1001,7 +1001,7 @@ const QUESTIONS = [
 			"Segmentación de red"
 		],
 		correctIndex: 1,
-		explanation: "Governance es el marco y los procesos mediante los cuales una organización se dirige y controla. Incluye políticas, procedimientos y estructuras de toma de decisiones."
+		explanation: "La gobernanza es el marco y los procesos mediante los cuales una organización se dirige y controla. Incluye políticas, procedimientos y estructuras de toma de decisiones."
 	},
 	{
 		id: 78,
@@ -1027,7 +1027,7 @@ const QUESTIONS = [
 			"Gasto"
 		],
 		correctIndex: 1,
-		explanation: "Un asset es cualquier elemento propiedad de la empresa que tenga valor (hardware, software, datos, propiedad intelectual, etc.)."
+		explanation: "Un activo es cualquier elemento propiedad de la empresa que tenga valor (hardware, software, datos, propiedad intelectual, etc.)."
 	},
 	{
 		id: 80,
@@ -1053,12 +1053,12 @@ const QUESTIONS = [
 			"Exposición"
 		],
 		correctIndex: 2,
-		explanation: "Risk incluye la likelihood y el impact de que un threat explote una vulnerability, causando efectos adversos en assets, operaciones o reputación de la empresa."
+		explanation: "El riesgo incluye la probabilidad y el impacto de que una amenaza explote una vulnerabilidad, causando efectos adversos en activos, operaciones o reputación de la empresa."
 	},
 	{
 		id: 82,
 		domain: "D1",
-		question: "¿A qué se refiere el término 'Risk Management Framework' (RMF) en el contexto de cybersecurity?",
+		question: "¿A qué se refiere el término 'Marco de Gestión de Riesgos' (RMF) en el contexto de ciberseguridad?",
 		options: [
 			"Un enfoque sistemático para identificar, evaluar y gestionar riesgos de una organización",
 			"Un conjunto de guías para configurar Firewalls",
@@ -1292,7 +1292,7 @@ const QUESTIONS = [
 	{
 		id: 100,
 		domain: "D1",
-		question: "¿Qué principio de seguridad se busca mantener durante un forensic examination al hacer una copia del evidence hard disk y generar hashes del disk original y de la copia?",
+		question: "¿Qué principio de seguridad se busca mantener durante un examen forense al hacer una copia del disco duro de evidencia y generar hashes del disco original y de la copia?",
 		options: [
 			"Confidencialidad",
 			"Disponibilidad",
@@ -1300,6 +1300,6 @@ const QUESTIONS = [
 			"Autenticación"
 		],
 		correctIndex: 2,
-		explanation: "En un forensic examination, mantener la Integrity de la evidencia es crítico. Hacer una copia y comparar hashes del original y la copia demuestra que los datos no han sido alterados."
+		explanation: "En un examen forense, mantener la Integridad de la evidencia es crítico. Hacer una copia y comparar hashes del original y la copia demuestra que los datos no han sido alterados."
 	}
 ];

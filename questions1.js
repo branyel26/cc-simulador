@@ -37,10 +37,10 @@ const QUESTIONS = [
   {
     id: 5,
     domain: "D5",
-    question: "¿En qué fase de configuration management es crucial validar que el baseline actual coincide con el baseline preliminar más todos los cambios aprobados secuencialmente?",
+    question: "¿En qué fase de gestión de configuración es crucial validar que la línea base actual coincide con la línea base preliminar más todos los cambios aprobados secuencialmente?",
     options: ["Identificación y control", "Gestión de cambios de configuración", "Contabilidad de estado", "Verificación y auditoría"],
     correctIndex: 3,
-    explanation: "Verification and audit se enfoca en comprobar que el estado real del sistema coincide con lo documentado/esperado: baseline inicial + cambios aprobados. La gestión de cambios controla cambios; status accounting reporta estados; identification/control define ítems y controles." 
+    explanation: "La verificación y auditoría se enfoca en comprobar que el estado real del sistema coincide con lo documentado/esperado: línea base inicial + cambios aprobados. La gestión de cambios controla cambios; el reporte de estado reporta estados; identificación/control define ítems y controles." 
   },
   {
     id: 6,
@@ -77,18 +77,18 @@ const QUESTIONS = [
   {
     id: 10,
     domain: "D3",
-    question: "¿Cuál es la descripción más precisa de Mandatory Control de Acceso (MAC)?",
-    options: ["Acceso centralizado con security labels aplicadas por el sistema", "Control descentralizado definido por usuarios", "Control basado en roles y permisos definido por usuarios", "Control basado en biometría"],
+    question: "¿Cuál es la descripción más precisa de Control de Acceso Obligatorio (MAC)?",
+    options: ["Acceso centralizado con etiquetas de seguridad aplicadas por el sistema", "Control descentralizado definido por usuarios", "Control basado en roles y permisos definido por usuarios", "Control basado en biometría"],
     correctIndex: 0,
     explanation: "MAC aplica decisiones de acceso basadas en etiquetas/clasificación y es impuesto por el sistema (security kernel). No depende del usuario/propietario como en DAC, ni es simplemente RBAC." 
   },
   {
     id: 11,
     domain: "D4",
-    question: "¿Qué threat actor permanece dentro de la red por largo tiempo usando mecanismos sofisticados para ocultarse y explotar?",
-    options: ["Amenaza interna", "Script Kiddie", "Amenaza Persistente Avanzada (APT)", "Hacktivista"],
+    question: "¿Qué actor de amenaza permanece dentro de la red por largo tiempo usando mecanismos sofisticados para ocultarse y explotar?",
+    options: ["Amenaza interna (insider threat)", "Script Kiddie", "Amenaza Persistente Avanzada (APT)", "Hacktivista"],
     correctIndex: 2,
-    explanation: "APT se caracteriza por persistencia, sigilo y recursos avanzados, permaneciendo largos periodos para espionaje/exfiltración. Script kiddies son poco sofisticados; hacktivists suelen ser más visibles; insider threat es interno, pero no define necesariamente sofisticación/persistencia." 
+    explanation: "APT se caracteriza por persistencia, sigilo y recursos avanzados, permaneciendo largos periodos para espionaje/exfiltración. Script kiddies son poco sofisticados; hacktivists suelen ser más visibles; la amenaza interna (insider threat) es interno, pero no define necesariamente sofisticación/persistencia." 
   },
   {
     id: 12,
@@ -133,10 +133,10 @@ const QUESTIONS = [
   {
     id: 17,
     domain: "D5",
-    question: "Tras generar un vulnerability report de un servidor crítico, ¿cuál es la mejor acción del analista?",
+    question: "Tras generar un informe de vulnerabilidades de un servidor crítico, ¿cuál es la mejor acción del analista?",
     options: ["Proteger el reporte con contraseña para mantener confidencialidad", "Subirlo a un servidor público", "Enviarlo por email a todos", "Imprimir varias copias y distribuir"],
     correctIndex: 0,
-    explanation: "Un vulnerability report contiene información sensible. Protegerlo (por ejemplo, con password y control de acceso) reduce exposición. Publicarlo o distribuirlo masivamente aumenta el riesgo; copias físicas se pierden fácilmente." 
+    explanation: "Un informe de vulnerabilidades contiene información sensible. Protegerlo (por ejemplo, con contraseña y control de acceso) reduce exposición. Publicarlo o distribuirlo masivamente aumenta el riesgo; copias físicas se pierden fácilmente." 
   },
   {
     id: 18,
@@ -144,7 +144,7 @@ const QUESTIONS = [
     question: "¿Qué modelo de control de acceso es más adecuado para operaciones militares/navales?",
     options: ["DAC", "RBAC", "MAC", "ABAC"],
     correctIndex: 2,
-    explanation: "MAC usa labels y clearance, alineado con jerarquías estrictas y need-to-know típico en ambientes militares." 
+    explanation: "MAC usa etiquetas y autorización de seguridad (clearance), alineado con jerarquías estrictas y necesidad de conocer típico en ambientes militares." 
   },
   {
     id: 19,
@@ -173,15 +173,15 @@ const QUESTIONS = [
   {
     id: 22,
     domain: "D5",
-    question: "En cybersecurity, ¿cómo difieren los métodos de cifrado asymmetric y symmetric?",
-    options: ["Asymmetric usa dos claves y symmetric usa una sola", "Asymmetric usa una sola y symmetric usa dos", "Ambos usan una sola", "Ambos usan dos"],
+    question: "En ciberseguridad, ¿cómo difieren los métodos de cifrado asimétrico y simétrico?",
+    options: ["Asimétrico usa dos claves y simétrico usa una sola", "Asimétrico usa una sola y simétrico usa dos", "Ambos usan una sola", "Ambos usan dos"],
     correctIndex: 0,
-    explanation: "Asymmetric (public/clave privada) usa un par de claves. Symmetric usa la misma clave para cifrar y descifrar." 
+    explanation: "El cifrado asimétrico (clave pública/privada) usa un par de claves. El simétrico usa la misma clave para cifrar y descifrar." 
   },
   {
     id: 23,
     domain: "D3",
-    question: "¿Cuál es el principio principal de Role-Based Control de Acceso (RBAC)?",
+    question: "¿Cuál es el principio principal de Control de Acceso Basado en Roles (RBAC)?",
     options: ["Asignar permisos por jerarquía individual", "Usar MFA para regular acceso", "Aplicar reglas del Firewall", "Configurar roles para determinar permisos"],
     correctIndex: 3,
     explanation: "RBAC asigna permisos a roles (funciones) y los usuarios heredan permisos según su rol. No es un mecanismo de MFA ni de Firewall." 
@@ -197,7 +197,7 @@ const QUESTIONS = [
   {
     id: 25,
     domain: "D1",
-    question: "¿Qué tipo de security control es un sistema biométrico que permite entrada a las instalaciones de un edificio?",
+    question: "¿Qué tipo de control de seguridad es un sistema biométrico que permite entrada a las instalaciones de un edificio?",
     options: ["Lógico", "Administrativo", "Físico", "Técnico"],
     correctIndex: 2,
     explanation: "Si el control regula entrada física a un edificio, se clasifica como Physical control (aunque use tecnología)." 
@@ -221,7 +221,7 @@ const QUESTIONS = [
   {
     id: 28,
     domain: "D1",
-    question: "¿Qué describe mejor SLE (Single Loss Expectancy) en risk assessment?",
+    question: "¿Qué describe mejor SLE (Expectativa de Pérdida Única) en la evaluación de riesgos?",
     options: ["Monto esperado que se perdería si el evento ocurre una vez", "Costo de medidas de seguridad", "Impacto total en periodo largo", "Pérdida por tiempo de inactividad"],
     correctIndex: 0,
     explanation: "SLE es la pérdida esperada por un solo evento/ocurrencia de un riesgo (una vez)." 
@@ -277,8 +277,8 @@ const QUESTIONS = [
   {
     id: 35,
     domain: "D1",
-    question: "¿Qué suele excluirse de un policy document?",
-    options: ["Procedimientos de incident response", "Reglas de conducta de empleados", "Diagramas detallados de network architecture", "Guías para updates regulares"],
+    question: "¿Qué suele excluirse de un documento de política?",
+    options: ["Procedimientos de respuesta a incidentes", "Reglas de conducta de empleados", "Diagramas detallados de arquitectura de red", "Guías para actualizaciones regulares"],
     correctIndex: 2,
     explanation: "Las políticas son de alto nivel; los detalles técnicos como diagramas de arquitectura suelen ir en documentación técnica/estándares, no en políticas." 
   },
@@ -286,9 +286,9 @@ const QUESTIONS = [
     id: 36,
     domain: "D4",
     question: "¿Qué término describe a un empleado que intenta vender información sensible en la dark web por problemas financieros?",
-    options: ["Exfiltrador de datos", "Amenaza interna", "Hacker externo", "Actor malicioso"],
+    options: ["Exfiltrador de datos", "Amenaza interna (insider threat)", "Hacker externo", "Actor malicioso"],
     correctIndex: 1,
-    explanation: "Un insider threat es alguien dentro de la organización que representa un riesgo (intencional o no)." 
+    explanation: "Una amenaza interna (insider threat) es alguien dentro de la organización que representa un riesgo (intencional o no)." 
   },
   {
     id: 37,
@@ -341,10 +341,10 @@ const QUESTIONS = [
   {
     id: 43,
     domain: "D1",
-    question: "¿Qué tipo de security control es un sistema biométrico usado para autenticar acceso a un dispositivo en la red?",
+    question: "¿Qué tipo de control de seguridad es un sistema biométrico usado para autenticar acceso a un dispositivo en la red?",
     options: ["Control administrativo", "Control técnico", "Control físico", "Control detectivo"],
     correctIndex: 1,
-    explanation: "Si la biometría autentica acceso lógico a un dispositivo/sistema, se clasifica como Technical control (implementado mediante tecnología)." 
+    explanation: "Si la biometría autentica acceso lógico a un dispositivo/sistema, se clasifica como control técnico (implementado mediante tecnología)." 
   },
   {
     id: 44,
@@ -384,7 +384,7 @@ const QUESTIONS = [
     question: "¿Qué asegura que updates tecnológicos/arquitectónicos cumplan un nivel mínimo de requisitos de seguridad?",
     options: ["Pistas de auditoría", "Pruebas de penetración", "Líneas base de seguridad", "Evaluaciones de riesgo"],
     correctIndex: 2,
-    explanation: "Security baselines definen configuraciones/requisitos mínimos aceptables; sirven como referencia para validar cambios." 
+    explanation: "Las líneas base de seguridad definen configuraciones/requisitos mínimos aceptables; sirven como referencia para validar cambios." 
   },
   {
     id: 49,
@@ -405,15 +405,15 @@ const QUESTIONS = [
   {
     id: 51,
     domain: "D5",
-    question: "¿Qué método de cifrado es más adecuado para proteger datos sensibles almacenados en un hard disk?",
+    question: "¿Qué método de cifrado es más adecuado para proteger datos sensibles almacenados en un disco duro?",
     options: ["DES", "RSA", "AES", "3DES"],
     correctIndex: 2,
-    explanation: "AES es un estándar moderno, robusto y eficiente para cifrado symmetric de grandes volúmenes de datos (data at rest)." 
+    explanation: "AES es un estándar moderno, robusto y eficiente para cifrado simétrico de grandes volúmenes de datos (datos en reposo)." 
   },
   {
     id: 52,
     domain: "D5",
-    question: "¿Qué característica define mejor el cifrado symmetric?",
+    question: "¿Qué característica define mejor el cifrado simétrico?",
     options: ["Usa dos claves separadas", "Una clave por destinatario", "Cifra en reposo pero no en tránsito", "Misma clave para cifrar y descifrar"],
     correctIndex: 3,
     explanation: "En symmetric encryption se usa la misma clave compartida para cifrado y descifrado; el reto principal es el key exchange." 
@@ -477,7 +477,7 @@ const QUESTIONS = [
   {
     id: 60,
     domain: "D2",
-    question: "¿Qué disaster recovery site es conocido por requerir el menor tiempo de puesta en marcha en emergencia?",
+    question: "¿Qué sitio de recuperación ante desastres es conocido por requerir el menor tiempo de puesta en marcha en emergencia?",
     options: ["Sitio caliente", "Sitio frío", "Sitio tibio", "Sitio móvil"],
     correctIndex: 0,
     explanation: "Hot site está listo y operativo casi de inmediato (infraestructura + datos actualizados)." 
@@ -488,12 +488,12 @@ const QUESTIONS = [
     question: "¿Qué tipo de control implica restaurar datos corruptos desde un backup?",
     options: ["Correctivo", "Preventivo", "Detectivo", "Disuasivo"],
     correctIndex: 0,
-    explanation: "Restaurar desde backups corrige/recupera tras un incidente: es un corrective control." 
+    explanation: "Restaurar desde backups corrige/recupera tras un incidente: es un control correctivo." 
   },
   {
     id: 62,
     domain: "D5",
-    question: "¿Qué método de sanitización NO es suficiente para desechar de forma segura un hard drive decommissioned?",
+    question: "¿Qué método de sanitización NO es suficiente para desechar de forma segura un disco duro dado de baja?",
     options: ["Borrado", "Desmagnetización", "Sobrescritura", "Trituración"],
     correctIndex: 0,
     explanation: "Erasing (borrar/quick format) no elimina datos de forma irrecuperable. Overwriting, degaussing o shredding son más seguros." 
@@ -501,7 +501,7 @@ const QUESTIONS = [
   {
     id: 63,
     domain: "D3",
-    question: "¿Qué característica define mejor Discretionary Control de Acceso (DAC)?",
+    question: "¿Qué característica define mejor Control de Acceso Discrecional (DAC)?",
     options: ["Reglas definidas por sysadmin", "Permisos por rol", "Decisiones por etiquetas de seguridad", "El dueño del dato define reglas de acceso"],
     correctIndex: 3,
     explanation: "En DAC, el owner controla permisos sobre el recurso y puede conceder acceso a otros." 
@@ -549,7 +549,7 @@ const QUESTIONS = [
   {
     id: 69,
     domain: "D4",
-    question: "¿Qué opción representa una técnica de logical monitoring en cybersecurity?",
+    question: "¿Qué opción representa una técnica de monitoreo lógico en ciberseguridad?",
     options: ["Configuración del Firewall", "Revisión de SIEM", "Escaneo de antivirus", "Segmentación de red"],
     correctIndex: 1,
     explanation: "SIEM review implica monitoreo/correlación centralizada de logs y eventos para detectar incidentes: es monitoreo lógico." 
@@ -557,10 +557,10 @@ const QUESTIONS = [
   {
     id: 70,
     domain: "D5",
-    question: "Si un servidor no cumple el security baseline, ¿cuál debe ser la acción inmediata?",
+    question: "Si un servidor no cumple la línea base de seguridad, ¿cuál debe ser la acción inmediata?",
     options: ["Actualización de software inmediata", "Notificar al administrador del sistema para corregir", "Evaluar el sistema por posible compromiso", "Revisión completa de configuración"],
     correctIndex: 2,
-    explanation: "Una desviación del baseline puede indicar compromiso. Primero se evalúa por señales de intrusión/malware antes de 'arreglar' y destruir evidencia." 
+    explanation: "Una desviación de la línea base puede indicar compromiso. Primero se evalúa por señales de intrusión/malware antes de 'arreglar' y destruir evidencia." 
   },
   {
     id: 71,
@@ -573,10 +573,10 @@ const QUESTIONS = [
   {
     id: 72,
     domain: "D1",
-    question: "¿Cuál es el elemento fundamental responsable de salvaguardar information assets?",
-    options: ["Security Control", "Evaluación de Riesgos", "Política de Seguridad", "Respuesta a incidentes"],
+    question: "¿Cuál es el elemento fundamental responsable de salvaguardar los activos de información?",
+    options: ["Control de Seguridad", "Evaluación de Riesgos", "Política de Seguridad", "Respuesta a incidentes"],
     correctIndex: 0,
-    explanation: "Los security controls son los mecanismos (técnicos/administrativos/físicos) que implementan protección. Policies y risk assessment guían, pero el control ejecuta." 
+    explanation: "Los controles de seguridad son los mecanismos (técnicos/administrativos/físicos) que implementan protección. Las políticas y la evaluación de riesgos guían, pero el control ejecuta." 
   },
   {
     id: 73,
@@ -613,10 +613,10 @@ const QUESTIONS = [
   {
     id: 77,
     domain: "D5",
-    question: "Durante la fase post-incident review, ¿qué actividad se espera principalmente?",
+    question: "Durante la fase de revisión post-incidente, ¿qué actividad se espera principalmente?",
     options: ["Procedimientos de contención", "Análisis forense y preservación de evidencia", "Evaluación de proveedores", "Discusión de lecciones aprendidas"],
     correctIndex: 3,
-    explanation: "Post-incident review se centra en lecciones aprendidas: qué funcionó, qué falló y mejoras para el futuro." 
+    explanation: "La revisión post-incidente se centra en lecciones aprendidas: qué funcionó, qué falló y mejoras para el futuro." 
   },
   {
     id: 78,
@@ -645,15 +645,15 @@ const QUESTIONS = [
   {
     id: 81,
     domain: "D5",
-    question: "¿Qué policy proporciona guías claras de uso apropiado e inapropiado de information assets?",
-    options: ["Política de cifrado de datos", "Network Política de Seguridad", "Política de Uso Aceptable", "Política de respuesta a incidentes"],
+    question: "¿Qué política proporciona guías claras de uso apropiado e inapropiado de activos de información?",
+    options: ["Política de cifrado de datos", "Política de Seguridad de Red", "Política de Uso Aceptable", "Política de respuesta a incidentes"],
     correctIndex: 2,
     explanation: "Política de Uso Aceptable (AUP) define lo permitido/prohibido al usar activos de información (internet, email, dispositivos, etc.)." 
   },
   {
     id: 82,
     domain: "D2",
-    question: "¿Cuál es el método más efectivo para determinar entry point y causa de una intrusión de malware y compromiso posterior?",
+    question: "¿Cuál es el método más efectivo para determinar el punto de entrada y causa de una intrusión de malware y compromiso posterior?",
     options: ["Monitoreo de tráfico de red", "Registros de antivirus", "Entrevistas a empleados", "Análisis de causa raíz"],
     correctIndex: 3,
     explanation: "Análisis de causa raíz identifica la causa primaria y el vector de entrada, no solo síntomas; permite corregir el origen del problema." 
@@ -733,7 +733,7 @@ const QUESTIONS = [
   {
     id: 92,
     domain: "D2",
-    question: "¿Qué estrategia mitiga mejor el impacto de la salida abrupta de un miembro clave de un equipo de cybersecurity?",
+    question: "¿Qué estrategia mitiga mejor el impacto de la salida abrupta de un miembro clave de un equipo de ciberseguridad?",
     options: ["Ajustes reactivos de personal", "Capacitación cruzada inmediata", "Planificación de sucesión", "Contratación temporal"],
     correctIndex: 2,
     explanation: "Planificación de sucesión prepara reemplazos y continuidad para roles críticos antes de que ocurra la salida." 
@@ -742,7 +742,7 @@ const QUESTIONS = [
     id: 93,
     domain: "D2",
     question: "En la etapa de preparación de Incident Response, ¿qué actividad se enfoca principalmente en asegurar respuesta efectiva?",
-    options: ["Identificar amenazas/vulnerabilidades", "Desarrollar comunicación para stakeholders", "Entrenar al staff en ejecución del plan", "Crear inventario detallado de assets"],
+    options: ["Identificar amenazas/vulnerabilidades", "Desarrollar comunicación para partes interesadas", "Entrenar al personal en ejecución del plan", "Crear inventario detallado de activos"],
     correctIndex: 2,
     explanation: "En preparación, capacitar al personal y practicar el plan es clave para ejecutar roles/procedimientos correctamente durante un incidente." 
   },
@@ -768,7 +768,7 @@ const QUESTIONS = [
     question: "¿Qué tipo de control implica instalar endpoint protection en todos los dispositivos de la empresa?",
     options: ["Administrativo", "Técnico", "Físico", "Operacional"],
     correctIndex: 1,
-    explanation: "Endpoint protection es una medida tecnológica (software/hardware): Technical control." 
+    explanation: "La protección de endpoints es una medida tecnológica (software/hardware): control técnico." 
   },
   {
     id: 97,

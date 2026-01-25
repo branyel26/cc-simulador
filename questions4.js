@@ -1057,10 +1057,10 @@ const QUESTIONS = [
 		domain: "D5",
 		question:
 			"¿Cómo se denomina a un empleado malicioso que utiliza sus privilegios para violar políticas organizacionales?",
-		options: ["Amenaza interna (Amenaza Interna)", "Ingeniero social", "Ciberdelincuente", "Atacante externo"],
+		options: ["Amenaza interna (insider threat)", "Ingeniero social", "Ciberdelincuente", "Atacante externo"],
 		correctIndex: 0,
 		explanation:
-			"Una amenaza interna (Amenaza Interna) es una persona de confianza (por ejemplo, un empleado) que abusa del acceso autorizado para comprometer la seguridad o violar una política."
+			"Una amenaza interna (insider threat) es una persona de confianza (por ejemplo, un empleado) que abusa del acceso autorizado para comprometer la seguridad o violar una política."
 	},
 	{
 		id: 93,
